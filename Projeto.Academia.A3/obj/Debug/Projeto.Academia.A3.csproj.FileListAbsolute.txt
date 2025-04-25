@@ -1,0 +1,10 @@
+C:\Users\Manuel\Desktop\Projeto.Academia.A3\Projeto.Academia.A3\bin\Debug\Projeto.Academia.A3.exe.config
+C:\Users\Manuel\Desktop\Projeto.Academia.A3\Projeto.Academia.A3\bin\Debug\Projeto.Academia.A3.exe
+C:\Users\Manuel\Desktop\Projeto.Academia.A3\Projeto.Academia.A3\bin\Debug\Projeto.Academia.A3.pdb
+C:\Users\Manuel\Desktop\Projeto.Academia.A3\Projeto.Academia.A3\obj\Debug\Projeto.Academia.A3.csproj.AssemblyReference.cache
+C:\Users\Manuel\Desktop\Projeto.Academia.A3\Projeto.Academia.A3\obj\Debug\Projeto.Academia.A3.Form1.resources
+C:\Users\Manuel\Desktop\Projeto.Academia.A3\Projeto.Academia.A3\obj\Debug\Projeto.Academia.A3.Properties.Resources.resources
+C:\Users\Manuel\Desktop\Projeto.Academia.A3\Projeto.Academia.A3\obj\Debug\Projeto.Academia.A3.csproj.GenerateResource.cache
+C:\Users\Manuel\Desktop\Projeto.Academia.A3\Projeto.Academia.A3\obj\Debug\Projeto.Academia.A3.csproj.CoreCompileInputs.cache
+C:\Users\Manuel\Desktop\Projeto.Academia.A3\Projeto.Academia.A3\obj\Debug\Projeto.Academia.A3.exe
+C:\Users\Manuel\Desktop\Projeto.Academia.A3\Projeto.Academia.A3\obj\Debug\Projeto.Academia.A3.pdb
