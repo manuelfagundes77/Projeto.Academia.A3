@@ -49,12 +49,13 @@ namespace Projeto.Academia.A3.View
                 DataCadastro = dataCadastro
             };
 
-            // Chama o Controller para adicionar o membro
+            // Chamando o método do Controller para adicionar o membro
             membroController.AdicionarMembro(novoMembro);
 
+            // Exibindo a mensagem de sucesso
             MessageBox.Show("Membro Adicionado com Sucesso!");
 
-            // Limpa os campos
+            // Limpa os campos de entrada
             campoNome.Clear();
             campoCPF.Clear();
             CampoEndereço.Clear();

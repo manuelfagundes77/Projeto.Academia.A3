@@ -7,19 +7,34 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+using Projeto.Academia.A3.Controller;
+using Projeto.Academia.A3.Data;
 
 namespace Projeto.Academia.A3.View
 {
     public partial class TelaLogin : Form
     {
+        private FuncionarioController _funcionarioController;
         public TelaLogin()
         {
             InitializeComponent();
+            _funcionarioController = new FuncionarioController();
         }
 
         private void TelaLogin_Load(object sender, EventArgs e)
         {
+            // Teste de conexão
+            MySqlConnection conexao = Conexao.ObterConexao();
 
+            if (conexao != null)
+            {
+                Conexao.FecharConexao(conexao);
+            }
+            else
+            {
+                // Aqui você pode fazer algo em caso de erro na conexão, como mostrar uma mensagem
+            }
         }
 
         private void btnLogar_Click(object sender, EventArgs e)
@@ -28,22 +43,22 @@ namespace Projeto.Academia.A3.View
             string login = campoLogin.Text;
             string senha = campoSenha.Text;
 
-            // Verifica se o login e senha são corretos
-            if (login == "ad" && senha == "123")
-            {
-                // Se for, abre a tela principal (Formulario)
-                //   Formulario formulario = new Formulario();
-                //   formulario.Show(); // Abre a nova tela
+            bool loginValido = _funcionarioController.ValidarLogin(login, senha);
 
+            if (loginValido)
+            {
+                // Se o login for válido, abre a tela principal
                 Menu menu = new Menu();
                 menu.Show(this);
                 this.Hide(); // Fecha a tela de login
             }
             else
             {
-                // Se não for, mostra um alerta
+                // Se o login for inválido, mostra um alerta
                 MessageBox.Show("Login ou Senha incorretos!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        
     }
 }

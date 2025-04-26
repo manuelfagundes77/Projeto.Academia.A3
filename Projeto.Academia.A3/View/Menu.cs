@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Projeto.Academia.A3.View
 {
@@ -33,6 +34,11 @@ namespace Projeto.Academia.A3.View
         {       
             //menu ADICIONAR FUNCIONARIO
 
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }
