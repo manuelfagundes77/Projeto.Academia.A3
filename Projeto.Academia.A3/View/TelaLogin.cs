@@ -59,6 +59,9 @@ namespace Projeto.Academia.A3.View
             }
         }
 
-        
+        private void TelaLogin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

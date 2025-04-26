@@ -17,6 +17,7 @@ namespace Projeto.Academia.A3
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new View.TelaLogin());
+           // Application.Run(new View.TelaAdicionarFuncionario());
         }
     }
 }

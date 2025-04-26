@@ -120,6 +120,12 @@
     <Compile Include="View\Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\TelaAdicionarFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\TelaAdicionarFuncionario.Designer.cs">
+      <DependentUpon>TelaAdicionarFuncionario.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\TelaLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,9 @@
     <EmbeddedResource Include="View\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\TelaAdicionarFuncionario.resx">
+      <DependentUpon>TelaAdicionarFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\TelaLogin.resx">
       <DependentUpon>TelaLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -159,9 +168,14 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\back_arrow_14447.ico" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\addusergroup_1251.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Windows_Turn_Off_22528.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

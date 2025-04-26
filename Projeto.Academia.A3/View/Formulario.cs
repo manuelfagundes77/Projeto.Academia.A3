@@ -53,7 +53,7 @@ namespace Projeto.Academia.A3.View
             membroController.AdicionarMembro(novoMembro);
 
             // Exibindo a mensagem de sucesso
-            MessageBox.Show("Membro Adicionado com Sucesso!");
+          //  MessageBox.Show("Membro Adicionado com Sucesso!");
 
             // Limpa os campos de entrada
             campoNome.Clear();
@@ -83,6 +83,13 @@ namespace Projeto.Academia.A3.View
                     Environment.Exit(0); // Encerra tudo imediatamente
                 }
             }
+        }
+
+        private void BtnVoltar_Click(object sender, EventArgs e)
+        {
+            Menu menu = new Menu();
+            menu.Show();
+            this.Hide();
         }
     }
 }

@@ -70,6 +70,7 @@
             // 
             // btnLogar
             // 
+            this.btnLogar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogar.Location = new System.Drawing.Point(298, 353);
             this.btnLogar.Name = "btnLogar";
             this.btnLogar.Size = new System.Drawing.Size(163, 23);
@@ -88,11 +89,13 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.campoSenha);
             this.Controls.Add(this.campoLogin);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "TelaLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaLogin";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TelaLogin_FormClosing);
             this.Load += new System.EventHandler(this.TelaLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
