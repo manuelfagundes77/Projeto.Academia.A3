@@ -44,3 +44,7 @@ C:\Users\Manuel\Desktop\Projeto.Academia.A3\Projeto.Academia.A3\bin\Debug\System
 C:\Users\Manuel\Desktop\Projeto.Academia.A3\Projeto.Academia.A3\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Manuel\Desktop\Projeto.Academia.A3\Projeto.Academia.A3\obj\Debug\Projeto..3D2ED528.Up2Date
 C:\Users\Manuel\Desktop\Projeto.Academia.A3\Projeto.Academia.A3\obj\Debug\Projeto.Academia.A3.View.TelaAdicionarFuncionario.resources
+C:\Users\Manuel\Desktop\Projeto.Academia.A3\Projeto.Academia.A3\obj\Debug\Projeto.Academia.A3.View.MenuLayout.resources
+C:\Users\Manuel\Desktop\Projeto.Academia.A3\Projeto.Academia.A3\obj\Debug\Projeto.Academia.A3.View.TelaLogo.resources
+C:\Users\Manuel\Desktop\Projeto.Academia.A3\Projeto.Academia.A3\obj\Debug\Projeto.Academia.A3.View.TelaListas.resources
+C:\Users\Manuel\Desktop\Projeto.Academia.A3\Projeto.Academia.A3\obj\Debug\Projeto.Academia.A3.View.TelaAdicionarTreino.resources

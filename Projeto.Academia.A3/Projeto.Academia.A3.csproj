@@ -120,17 +120,41 @@
     <Compile Include="View\Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\MenuLayout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MenuLayout.Designer.cs">
+      <DependentUpon>MenuLayout.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\TelaAdicionarFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\TelaAdicionarFuncionario.Designer.cs">
       <DependentUpon>TelaAdicionarFuncionario.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\TelaAdicionarTreino.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\TelaAdicionarTreino.Designer.cs">
+      <DependentUpon>TelaAdicionarTreino.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\TelaListas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\TelaListas.Designer.cs">
+      <DependentUpon>TelaListas.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\TelaLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\TelaLogin.Designer.cs">
       <DependentUpon>TelaLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\TelaLogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\TelaLogo.Designer.cs">
+      <DependentUpon>TelaLogo.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -148,11 +172,23 @@
     <EmbeddedResource Include="View\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\MenuLayout.resx">
+      <DependentUpon>MenuLayout.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\TelaAdicionarFuncionario.resx">
       <DependentUpon>TelaAdicionarFuncionario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\TelaAdicionarTreino.resx">
+      <DependentUpon>TelaAdicionarTreino.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\TelaListas.resx">
+      <DependentUpon>TelaListas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\TelaLogin.resx">
       <DependentUpon>TelaLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\TelaLogo.resx">
+      <DependentUpon>TelaLogo.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -176,6 +212,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Windows_Turn_Off_22528.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconTreino.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconFuncionario.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconMembroadd.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pagamentos.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconACAEMIA.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -32,5 +32,55 @@ namespace Projeto.Academia.A3.Controller
                 MessageBox.Show("Erro ao adicionar membro.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+
+
+        // Método para listar todos os membros
+        public List<Membro> ListarMembros()
+        {
+            List<Membro> membros = _membroService.ListarMembros();
+
+            if (membros != null && membros.Count > 0)
+            {
+                return membros;
+            }
+            else
+            {
+                MessageBox.Show("Nenhum membro encontrado.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return new List<Membro>(); // Retorna uma lista vazia se não houver membros
+            }
+        }
+
+        //Método para buscar por CPF
+        public Membro BuscarMembroPorCPF(string cpf)
+        {
+            Membro membro = _membroService.BuscarMembroPorCPF(cpf);
+
+            if (membro != null)
+            {
+                return membro;
+            }
+            else
+            {
+                MessageBox.Show("Membro não encontrado.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return null; // Retorna null se não encontrar o membro
+            }
+        }
+
+        public void EditarMembro(Membro membro)
+        {
+            // Validações adicionais podem ser feitas aqui se necessário
+
+            bool sucesso = _membroService.EditarMembro(membro);
+
+            if (sucesso)
+            {
+                MessageBox.Show("Membro editado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Erro ao editar membro.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

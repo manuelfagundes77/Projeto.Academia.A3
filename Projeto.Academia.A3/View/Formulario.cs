@@ -39,7 +39,30 @@ namespace Projeto.Academia.A3.View
             string telefone = campoTelefone.Text;
             DateTime dataCadastro = dateTimePicker1.Value;
 
-            
+            // Verificando se algum campo está vazio
+            if (string.IsNullOrWhiteSpace(nome) ||
+                string.IsNullOrWhiteSpace(cpf) ||
+                string.IsNullOrWhiteSpace(endereco) ||
+                string.IsNullOrWhiteSpace(telefone))
+            {
+                MessageBox.Show("Preencha todos os campos!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return; // para o código aqui se faltar algo
+            }
+
+            // Verifica se o CPF ou Telefone contém apenas números
+            if (!cpf.All(char.IsDigit))
+            {
+                MessageBox.Show("CPF deve conter apenas números!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (!telefone.All(char.IsDigit))
+            {
+                MessageBox.Show("Telefone deve conter apenas números!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+
             Membro novoMembro = new Membro
             {
                 Nome = nome,
@@ -52,8 +75,7 @@ namespace Projeto.Academia.A3.View
             // Chamando o método do Controller para adicionar o membro
             membroController.AdicionarMembro(novoMembro);
 
-            // Exibindo a mensagem de sucesso
-          //  MessageBox.Show("Membro Adicionado com Sucesso!");
+      
 
             // Limpa os campos de entrada
             campoNome.Clear();
