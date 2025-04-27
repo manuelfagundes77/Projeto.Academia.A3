@@ -30,6 +30,9 @@
         {
             this.panelPrincipal = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panelLuzVerde = new System.Windows.Forms.Panel();
+            this.labelLogado = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.pagamentos = new System.Windows.Forms.Button();
             this.adicionarTreino = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -50,6 +53,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
+            this.panel1.Controls.Add(this.panelLuzVerde);
+            this.panel1.Controls.Add(this.labelLogado);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pagamentos);
             this.panel1.Controls.Add(this.adicionarTreino);
             this.panel1.Controls.Add(this.button2);
@@ -61,6 +67,34 @@
             this.panel1.Size = new System.Drawing.Size(156, 450);
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // panelLuzVerde
+            // 
+            this.panelLuzVerde.BackgroundImage = global::Projeto.Academia.A3.Properties.Resources.iconluzVerde;
+            this.panelLuzVerde.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panelLuzVerde.Location = new System.Drawing.Point(117, 428);
+            this.panelLuzVerde.Name = "panelLuzVerde";
+            this.panelLuzVerde.Size = new System.Drawing.Size(21, 19);
+            this.panelLuzVerde.TabIndex = 9;
+            this.panelLuzVerde.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLuzVerde_Paint);
+            // 
+            // labelLogado
+            // 
+            this.labelLogado.AutoSize = true;
+            this.labelLogado.Location = new System.Drawing.Point(3, 428);
+            this.labelLogado.Name = "labelLogado";
+            this.labelLogado.Size = new System.Drawing.Size(35, 13);
+            this.labelLogado.TabIndex = 8;
+            this.labelLogado.Text = "label2";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "label1";
             // 
             // pagamentos
             // 
@@ -160,13 +194,16 @@
             this.ClientSize = new System.Drawing.Size(904, 450);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelPrincipal);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MenuLayout";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuLayout";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MenuLayout_FormClosing);
             this.Load += new System.EventHandler(this.MenuLayout_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -180,5 +217,8 @@
         private System.Windows.Forms.Panel areaBranca;
         private System.Windows.Forms.Button adicionarTreino;
         private System.Windows.Forms.Button pagamentos;
+        private System.Windows.Forms.Label labelLogado;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panelLuzVerde;
     }
 }

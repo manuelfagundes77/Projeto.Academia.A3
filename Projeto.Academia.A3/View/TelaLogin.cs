@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using Projeto.Academia.A3.Controller;
 using Projeto.Academia.A3.Data;
+using Projeto.Academia.A3.Models;
 
 namespace Projeto.Academia.A3.View
 {
@@ -38,8 +39,7 @@ namespace Projeto.Academia.A3.View
         }
 
         private void btnLogar_Click(object sender, EventArgs e)
-        {
-            // Lógica para validar o login e senha
+        { // Lógica para validar o login e senha
             string login = campoLogin.Text;
             string senha = campoSenha.Text;
 
@@ -47,9 +47,15 @@ namespace Projeto.Academia.A3.View
 
             if (loginValido)
             {
-                // Se o login for válido, abre a tela principal
-                Menu menu = new Menu();
-                menu.Show(this);
+                // Se o login for válido, busca os dados do funcionário
+                Funcionario funcionarioLogado = _funcionarioController.BuscarFuncionarioPorLogin(login, senha); // Método para buscar os dados do funcionário
+
+                // Armazenando o funcionário logado na classe FuncionarioLogado
+                FuncionarioLogado.Funcionario = funcionarioLogado;
+
+                // Abre a tela principal
+                MenuLayout menuLayout = new MenuLayout();
+                menuLayout.Show(this);
                 this.Hide(); // Fecha a tela de login
             }
             else

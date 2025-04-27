@@ -50,5 +50,18 @@ namespace Projeto.Academia.A3.Controller
                 throw new Exception("Erro ao adicionar funcionário: " + ex.Message);
             }
         }
+
+        // Método para buscar o funcionário pelo login e senha
+        public Funcionario BuscarFuncionarioPorLogin(string login, string senha)
+        {
+            try
+            {
+                return _funcionarioService.BuscarFuncionarioPorLogin(login, senha);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro ao buscar funcionário: " + ex.Message);
+            }
+        }
     }
 }

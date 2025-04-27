@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Projeto.Academia.A3.Controller;
 using Projeto.Academia.A3.Models;
+using Projeto.Academia.A3.Utils;
 
 namespace Projeto.Academia.A3.View
 {
@@ -50,15 +51,8 @@ namespace Projeto.Academia.A3.View
             }
 
             // Verifica se o CPF ou Telefone contém apenas números
-            if (!cpf.All(char.IsDigit))
+            if (!Uteis.ValidarSomenteNumeros(cpf, "CPF") || !Uteis.ValidarSomenteNumeros(telefone, "Telefone"))
             {
-                MessageBox.Show("CPF deve conter apenas números!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            if (!telefone.All(char.IsDigit))
-            {
-                MessageBox.Show("Telefone deve conter apenas números!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 

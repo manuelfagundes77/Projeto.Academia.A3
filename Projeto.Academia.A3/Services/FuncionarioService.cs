@@ -59,5 +59,43 @@ namespace Projeto.Academia.A3.Services
                 }
             }
         }
+
+        public Funcionario BuscarFuncionarioPorLogin(string login, string senha)
+        {
+            // Aqui você busca os dados do funcionário no banco
+            string query = "SELECT * FROM funcionario WHERE Login = @login AND Senha = @senha";
+
+            using (MySqlConnection conexao = Conexao.ObterConexao())
+            {
+                try
+                {
+                    MySqlCommand cmd = new MySqlCommand(query, conexao);
+                    cmd.Parameters.AddWithValue("@login", login);
+                    cmd.Parameters.AddWithValue("@senha", senha);
+
+                    MySqlDataReader reader = cmd.ExecuteReader();
+
+                    if (reader.HasRows)
+                    {
+                        reader.Read(); // Avança para o primeiro resultado
+                        return new Funcionario
+                        {
+                            FuncionarioId = reader.GetInt32("FuncionarioId"),
+                            Nome = reader.GetString("Nome"),
+                            Cargo = reader.GetString("Cargo"),
+                            Login = reader.GetString("Login"),
+                            Senha = reader.GetString("Senha")
+                        };
+                    }
+
+                    return null; // Se não encontrar o funcionário
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Erro ao buscar funcionário: " + ex.Message);
+                }
+            }
+        }
+
     }
 }

@@ -205,7 +205,40 @@ namespace Projeto.Academia.A3.Services
             }
             catch (Exception ex)
             {
-                
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+            finally
+            {
+                Conexao.FecharConexao(conexao);
+            }
+        }
+
+        public bool ExcluirMembro(int alunoId)
+        {
+            MySqlConnection conexao = Conexao.ObterConexao();
+
+            if (conexao == null)
+            {
+                return false;
+            }
+
+            try
+            {
+                // Comando para excluir o membro pelo ID
+                string queryDelete = "DELETE FROM Membros WHERE AlunoId = @AlunoId";
+
+                MySqlCommand comandoDelete = new MySqlCommand(queryDelete, conexao);
+                comandoDelete.Parameters.AddWithValue("@AlunoId", alunoId);
+
+                int resultado = comandoDelete.ExecuteNonQuery();
+
+                // Retorna true se a exclusão for bem-sucedida
+                return resultado > 0;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao excluir membro: " + ex.Message);
                 return false;
             }
             finally

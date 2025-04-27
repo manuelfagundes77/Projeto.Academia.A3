@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Projeto.Academia.A3.Models;
 
 namespace Projeto.Academia.A3.View
 {
@@ -19,7 +20,23 @@ namespace Projeto.Academia.A3.View
 
         private void MenuLayout_Load(object sender, EventArgs e)
         {
+            verificarLogado();
+        }
 
+        private void verificarLogado()
+        {
+            // Verifica se o funcionário está logado e altera o texto do labelLogado
+            if (FuncionarioLogado.Funcionario != null)
+            {
+                // Exibe o nome do funcionário logado no label
+                labelLogado.Text = "Bem-vindo, " + FuncionarioLogado.Funcionario.Nome;
+                panelLuzVerde.Visible = true;  // Torna o painel visível da luz verde 
+            }
+            else
+            {
+                labelLogado.Text = "Nenhum funcionário logado";
+                panelLuzVerde.Visible = false;  
+            }
         }
 
         private void AbrirFormNoPainel(Form form)
@@ -70,6 +87,16 @@ namespace Projeto.Academia.A3.View
         private void adicionarTreino_Click(object sender, EventArgs e)
         {
             AbrirFormNoPainel(new TelaAdicionarTreino());
+        }
+
+        private void MenuLayout_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void panelLuzVerde_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -125,6 +125,7 @@
             // 
             // btnAdicionarMembro
             // 
+            this.btnAdicionarMembro.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdicionarMembro.Location = new System.Drawing.Point(243, 367);
             this.btnAdicionarMembro.Name = "btnAdicionarMembro";
             this.btnAdicionarMembro.Size = new System.Drawing.Size(113, 34);

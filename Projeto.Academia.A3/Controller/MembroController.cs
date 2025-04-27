@@ -82,5 +82,20 @@ namespace Projeto.Academia.A3.Controller
                 MessageBox.Show("Erro ao editar membro.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        public void ExcluirMembro(int alunoId)
+        {
+            // Chama o serviço para excluir o membro passando apenas o ID
+            bool sucesso = _membroService.ExcluirMembro(alunoId);
+
+            if (sucesso)
+            {
+                //MessageBox.Show("Membro excluído com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Erro ao excluir membro.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

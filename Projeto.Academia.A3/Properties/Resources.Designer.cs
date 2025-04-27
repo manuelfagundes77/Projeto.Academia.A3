@@ -103,6 +103,16 @@ namespace Projeto.Academia.A3.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iconluzVerde {
+            get {
+                object obj = ResourceManager.GetObject("iconluzVerde", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconMembroadd {
             get {
                 object obj = ResourceManager.GetObject("iconMembroadd", resourceCulture);

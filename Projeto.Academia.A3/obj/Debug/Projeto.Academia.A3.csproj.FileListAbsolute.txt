@@ -48,3 +48,5 @@ C:\Users\Manuel\Desktop\Projeto.Academia.A3\Projeto.Academia.A3\obj\Debug\Projet
 C:\Users\Manuel\Desktop\Projeto.Academia.A3\Projeto.Academia.A3\obj\Debug\Projeto.Academia.A3.View.TelaLogo.resources
 C:\Users\Manuel\Desktop\Projeto.Academia.A3\Projeto.Academia.A3\obj\Debug\Projeto.Academia.A3.View.TelaListas.resources
 C:\Users\Manuel\Desktop\Projeto.Academia.A3\Projeto.Academia.A3\obj\Debug\Projeto.Academia.A3.View.TelaAdicionarTreino.resources
+C:\Users\Manuel\Desktop\Projeto.Academia.A3\Projeto.Academia.A3\obj\Debug\Projeto.Academia.A3.View.TelaHistorico.resources
+C:\Users\Manuel\Desktop\Projeto.Academia.A3\Projeto.Academia.A3\obj\Debug\Projeto.Academia.A3.View.TelaTreino.resources

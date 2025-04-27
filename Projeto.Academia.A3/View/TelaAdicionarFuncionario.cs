@@ -71,5 +71,10 @@ namespace Projeto.Academia.A3.View
         {
             Application.Exit();
         }
+
+        private void TelaAdicionarFuncionario_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
