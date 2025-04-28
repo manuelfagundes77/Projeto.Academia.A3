@@ -63,6 +63,16 @@ namespace Projeto.Academia.A3.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap academia {
+            get {
+                object obj = ResourceManager.GetObject("academia", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap addusergroup_1251 {
             get {
                 object obj = ResourceManager.GetObject("addusergroup_1251", resourceCulture);
@@ -86,6 +96,16 @@ namespace Projeto.Academia.A3.Properties {
         internal static System.Drawing.Bitmap cadastrarmembro {
             get {
                 object obj = ResourceManager.GetObject("cadastrarmembro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap historico24x24 {
+            get {
+                object obj = ResourceManager.GetObject("historico24x24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

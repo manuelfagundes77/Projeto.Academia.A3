@@ -127,8 +127,8 @@
   <data name="treino" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\treino.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="addusergroup_1251" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\addusergroup_1251.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pagamentos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pagamentos.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="back_arrow_14447" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\back_arrow_14447.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,11 +148,11 @@
   <data name="iconedit3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconedit3.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pagamentos" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pagamentos.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="iconluzVerde" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconluzVerde.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="addusergroup_1251" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\addusergroup_1251.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iconedit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconedit.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,7 +169,13 @@
   <data name="iconFuncionario" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconFuncionario.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="academia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\academia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="iconadd" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconadd.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="historico24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\historico24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

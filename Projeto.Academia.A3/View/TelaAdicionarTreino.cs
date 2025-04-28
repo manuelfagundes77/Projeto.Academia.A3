@@ -160,6 +160,15 @@ namespace Projeto.Academia.A3.View
                                     "Exclusão Concluída",
                                     MessageBoxButtons.OK,
                                     MessageBoxIcon.Information);
+
+                    campoNome.Text = string.Empty;
+                    campoCPF.Text = string.Empty;
+                    campoTelefone.Text = string.Empty;
+                    campoEndereco.Text = string.Empty;
+                    labelID.Text = string.Empty;
+                    labelData.Text = string.Empty;
+                    campoBusca.Text = string.Empty;
+
                 }
                 else
                 {

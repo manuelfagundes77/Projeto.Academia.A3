@@ -30,9 +30,9 @@
         {
             this.panelPrincipal = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panelLuzVerde = new System.Windows.Forms.Panel();
             this.labelLogado = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panelLuzVerde = new System.Windows.Forms.Panel();
             this.pagamentos = new System.Windows.Forms.Button();
             this.adicionarTreino = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -45,9 +45,9 @@
             // 
             this.panelPrincipal.BackColor = System.Drawing.Color.White;
             this.panelPrincipal.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelPrincipal.Location = new System.Drawing.Point(156, 0);
+            this.panelPrincipal.Location = new System.Drawing.Point(154, 0);
             this.panelPrincipal.Name = "panelPrincipal";
-            this.panelPrincipal.Size = new System.Drawing.Size(748, 450);
+            this.panelPrincipal.Size = new System.Drawing.Size(761, 450);
             this.panelPrincipal.TabIndex = 2;
             // 
             // panel1
@@ -64,9 +64,19 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(156, 450);
+            this.panel1.Size = new System.Drawing.Size(154, 450);
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // panelLuzVerde
+            // 
+            this.panelLuzVerde.BackgroundImage = global::Projeto.Academia.A3.Properties.Resources.iconluzVerde;
+            this.panelLuzVerde.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panelLuzVerde.Location = new System.Drawing.Point(117, 428);
+            this.panelLuzVerde.Name = "panelLuzVerde";
+            this.panelLuzVerde.Size = new System.Drawing.Size(21, 19);
+            this.panelLuzVerde.TabIndex = 9;
+            this.panelLuzVerde.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLuzVerde_Paint);
             // 
             // labelLogado
             // 
@@ -85,16 +95,6 @@
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 7;
             this.label1.Text = "label1";
-            // 
-            // panelLuzVerde
-            // 
-            this.panelLuzVerde.BackgroundImage = global::Projeto.Academia.A3.Properties.Resources.iconluzVerde;
-            this.panelLuzVerde.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panelLuzVerde.Location = new System.Drawing.Point(117, 428);
-            this.panelLuzVerde.Name = "panelLuzVerde";
-            this.panelLuzVerde.Size = new System.Drawing.Size(21, 19);
-            this.panelLuzVerde.TabIndex = 9;
-            this.panelLuzVerde.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLuzVerde_Paint);
             // 
             // pagamentos
             // 
@@ -164,7 +164,7 @@
             this.areaBranca.Dock = System.Windows.Forms.DockStyle.Top;
             this.areaBranca.Location = new System.Drawing.Point(0, 0);
             this.areaBranca.Name = "areaBranca";
-            this.areaBranca.Size = new System.Drawing.Size(156, 85);
+            this.areaBranca.Size = new System.Drawing.Size(154, 85);
             this.areaBranca.TabIndex = 4;
             this.areaBranca.Click += new System.EventHandler(this.areaBranca_Click);
             this.areaBranca.Paint += new System.Windows.Forms.PaintEventHandler(this.areaBranca_Paint);
@@ -191,7 +191,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(904, 450);
+            this.ClientSize = new System.Drawing.Size(915, 450);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelPrincipal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

@@ -43,10 +43,10 @@
             this.labelID = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.labelData = new System.Windows.Forms.Label();
-            this.btnAbrirHistoricoDeTreino = new System.Windows.Forms.Button();
-            this.btnAbrirNovotreino = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnAbrirNovotreino = new System.Windows.Forms.Button();
+            this.btnAbrirHistoricoDeTreino = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -185,26 +185,6 @@
             this.labelData.TabIndex = 16;
             this.labelData.Text = "data";
             // 
-            // btnAbrirHistoricoDeTreino
-            // 
-            this.btnAbrirHistoricoDeTreino.Location = new System.Drawing.Point(604, 170);
-            this.btnAbrirHistoricoDeTreino.Name = "btnAbrirHistoricoDeTreino";
-            this.btnAbrirHistoricoDeTreino.Size = new System.Drawing.Size(140, 51);
-            this.btnAbrirHistoricoDeTreino.TabIndex = 17;
-            this.btnAbrirHistoricoDeTreino.Text = "Historico de treino";
-            this.btnAbrirHistoricoDeTreino.UseVisualStyleBackColor = true;
-            this.btnAbrirHistoricoDeTreino.Click += new System.EventHandler(this.btnAbrirHistoricoDeTreino_Click);
-            // 
-            // btnAbrirNovotreino
-            // 
-            this.btnAbrirNovotreino.Location = new System.Drawing.Point(604, 103);
-            this.btnAbrirNovotreino.Name = "btnAbrirNovotreino";
-            this.btnAbrirNovotreino.Size = new System.Drawing.Size(140, 51);
-            this.btnAbrirNovotreino.TabIndex = 18;
-            this.btnAbrirNovotreino.Text = " Novo Treino";
-            this.btnAbrirNovotreino.UseVisualStyleBackColor = true;
-            this.btnAbrirNovotreino.Click += new System.EventHandler(this.btnAbrirNovotreino_Click);
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -223,6 +203,36 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(150, 95);
             this.flowLayoutPanel1.TabIndex = 20;
+            // 
+            // btnAbrirNovotreino
+            // 
+            this.btnAbrirNovotreino.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAbrirNovotreino.Image = global::Projeto.Academia.A3.Properties.Resources.iconadd;
+            this.btnAbrirNovotreino.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAbrirNovotreino.Location = new System.Drawing.Point(604, 103);
+            this.btnAbrirNovotreino.Name = "btnAbrirNovotreino";
+            this.btnAbrirNovotreino.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnAbrirNovotreino.Size = new System.Drawing.Size(140, 51);
+            this.btnAbrirNovotreino.TabIndex = 18;
+            this.btnAbrirNovotreino.Text = " Novo Treino";
+            this.btnAbrirNovotreino.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAbrirNovotreino.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAbrirNovotreino.UseVisualStyleBackColor = true;
+            this.btnAbrirNovotreino.Click += new System.EventHandler(this.btnAbrirNovotreino_Click);
+            // 
+            // btnAbrirHistoricoDeTreino
+            // 
+            this.btnAbrirHistoricoDeTreino.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAbrirHistoricoDeTreino.Image = global::Projeto.Academia.A3.Properties.Resources.historico24x24;
+            this.btnAbrirHistoricoDeTreino.Location = new System.Drawing.Point(604, 170);
+            this.btnAbrirHistoricoDeTreino.Name = "btnAbrirHistoricoDeTreino";
+            this.btnAbrirHistoricoDeTreino.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnAbrirHistoricoDeTreino.Size = new System.Drawing.Size(140, 51);
+            this.btnAbrirHistoricoDeTreino.TabIndex = 17;
+            this.btnAbrirHistoricoDeTreino.Text = "  Historico de treino";
+            this.btnAbrirHistoricoDeTreino.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAbrirHistoricoDeTreino.UseVisualStyleBackColor = true;
+            this.btnAbrirHistoricoDeTreino.Click += new System.EventHandler(this.btnAbrirHistoricoDeTreino_Click);
             // 
             // btnExcluir
             // 
