@@ -30,9 +30,9 @@
         {
             this.panelPrincipal = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panelLuzVerde = new System.Windows.Forms.Panel();
             this.labelLogado = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.panelLuzVerde = new System.Windows.Forms.Panel();
             this.pagamentos = new System.Windows.Forms.Button();
             this.adicionarTreino = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -68,16 +68,6 @@
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // panelLuzVerde
-            // 
-            this.panelLuzVerde.BackgroundImage = global::Projeto.Academia.A3.Properties.Resources.iconluzVerde;
-            this.panelLuzVerde.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panelLuzVerde.Location = new System.Drawing.Point(117, 428);
-            this.panelLuzVerde.Name = "panelLuzVerde";
-            this.panelLuzVerde.Size = new System.Drawing.Size(21, 19);
-            this.panelLuzVerde.TabIndex = 9;
-            this.panelLuzVerde.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLuzVerde_Paint);
-            // 
             // labelLogado
             // 
             this.labelLogado.AutoSize = true;
@@ -95,6 +85,16 @@
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 7;
             this.label1.Text = "label1";
+            // 
+            // panelLuzVerde
+            // 
+            this.panelLuzVerde.BackgroundImage = global::Projeto.Academia.A3.Properties.Resources.iconluzVerde;
+            this.panelLuzVerde.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panelLuzVerde.Location = new System.Drawing.Point(117, 428);
+            this.panelLuzVerde.Name = "panelLuzVerde";
+            this.panelLuzVerde.Size = new System.Drawing.Size(21, 19);
+            this.panelLuzVerde.TabIndex = 9;
+            this.panelLuzVerde.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLuzVerde_Paint);
             // 
             // pagamentos
             // 
@@ -130,7 +130,7 @@
             this.adicionarTreino.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.adicionarTreino.Size = new System.Drawing.Size(156, 48);
             this.adicionarTreino.TabIndex = 5;
-            this.adicionarTreino.Text = "Adicionar Treino";
+            this.adicionarTreino.Text = "Area do Membro";
             this.adicionarTreino.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.adicionarTreino.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.adicionarTreino.UseVisualStyleBackColor = false;

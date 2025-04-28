@@ -36,6 +36,20 @@ namespace Projeto.Academia.A3.View
 
         private void btnAdicionarTreino_Click(object sender, EventArgs e)
         {
+            // Verificar se foi selecionado um tipo de treino
+            if (selecionarTipo.SelectedItem == null)
+            {
+                MessageBox.Show("Por favor, selecione um tipo de treino.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Verificar se a descrição está vazia
+            if (string.IsNullOrWhiteSpace(campoDescricao.Text))
+            {
+                MessageBox.Show("Por favor, preencha a descrição do treino.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             // Obter os valores dos campos do formulário
             string tipo = selecionarTipo.SelectedItem.ToString(); // Tipo do treino
             string descricao = campoDescricao.Text; // Descrição do treino
@@ -57,6 +71,11 @@ namespace Projeto.Academia.A3.View
 
             // Chamar o método AdicionarTreino do controlador
             treinoController.AdicionarTreino(novoTreino);
+
+            selecionarTipo.SelectedIndex = -1; // Limpa a seleção do ComboBox
+            campoDescricao.Text = string.Empty; // Limpa o campo de descrição
+            pegaData.Value = DateTime.Today; // Reseta a data para hoje
+            dataDuracao.Value = DateTime.Today; // Também reseta a duração para hoje
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)

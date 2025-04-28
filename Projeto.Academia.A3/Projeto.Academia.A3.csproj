@@ -253,5 +253,32 @@
   <ItemGroup>
     <None Include="Resources\iconluzVerde.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconDelete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconDeltetebranco.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconedit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconedit2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconedit3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\membro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cadastrarmembro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treino.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconadd.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -39,21 +39,21 @@
             // labelID
             // 
             this.labelID.AutoSize = true;
-            this.labelID.Location = new System.Drawing.Point(685, 43);
+            this.labelID.Location = new System.Drawing.Point(429, 43);
             this.labelID.Name = "labelID";
-            this.labelID.Size = new System.Drawing.Size(18, 13);
+            this.labelID.Size = new System.Drawing.Size(35, 13);
             this.labelID.TabIndex = 1;
-            this.labelID.Text = "ID";
+            this.labelID.Text = "Nome";
             // 
             // labelNome
             // 
             this.labelNome.AutoSize = true;
             this.labelNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNome.Location = new System.Drawing.Point(418, 34);
+            this.labelNome.Location = new System.Drawing.Point(612, 35);
             this.labelNome.Name = "labelNome";
-            this.labelNome.Size = new System.Drawing.Size(68, 25);
+            this.labelNome.Size = new System.Drawing.Size(33, 25);
             this.labelNome.TabIndex = 2;
-            this.labelNome.Text = "Nome";
+            this.labelNome.Text = "ID";
             // 
             // dataView
             // 
@@ -82,7 +82,7 @@
             this.panelVoltar.BackgroundImage = global::Projeto.Academia.A3.Properties.Resources.back_arrow_14447;
             this.panelVoltar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelVoltar.Location = new System.Drawing.Point(41, 12);
+            this.panelVoltar.Location = new System.Drawing.Point(12, 12);
             this.panelVoltar.Name = "panelVoltar";
             this.panelVoltar.Size = new System.Drawing.Size(48, 48);
             this.panelVoltar.TabIndex = 6;

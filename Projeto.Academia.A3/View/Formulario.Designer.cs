@@ -40,7 +40,7 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btnAdicionarMembro = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.BtnVoltar = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // label1
@@ -130,7 +130,7 @@
             this.btnAdicionarMembro.Name = "btnAdicionarMembro";
             this.btnAdicionarMembro.Size = new System.Drawing.Size(113, 34);
             this.btnAdicionarMembro.TabIndex = 11;
-            this.btnAdicionarMembro.Text = "Adicionar Membro";
+            this.btnAdicionarMembro.Text = "Cadastrar Membro";
             this.btnAdicionarMembro.UseVisualStyleBackColor = true;
             this.btnAdicionarMembro.Click += new System.EventHandler(this.btnAdicionarMembro_Click);
             // 
@@ -144,23 +144,21 @@
             this.label6.TabIndex = 12;
             this.label6.Text = "Cadastrar Membro";
             // 
-            // BtnVoltar
+            // panel1
             // 
-            this.BtnVoltar.BackgroundImage = global::Projeto.Academia.A3.Properties.Resources.back_arrow_14447;
-            this.BtnVoltar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnVoltar.Location = new System.Drawing.Point(12, 1);
-            this.BtnVoltar.Name = "BtnVoltar";
-            this.BtnVoltar.Size = new System.Drawing.Size(48, 48);
-            this.BtnVoltar.TabIndex = 13;
-            this.BtnVoltar.Click += new System.EventHandler(this.BtnVoltar_Click);
+            this.panel1.BackgroundImage = global::Projeto.Academia.A3.Properties.Resources.cadastrarmembro;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel1.Location = new System.Drawing.Point(36, 108);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(118, 101);
+            this.panel1.TabIndex = 13;
             // 
             // Formulario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.BtnVoltar);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnAdicionarMembro);
             this.Controls.Add(this.dateTimePicker1);
@@ -200,6 +198,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button btnAdicionarMembro;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Panel BtnVoltar;
+        private System.Windows.Forms.Panel panel1;
     }
 }
