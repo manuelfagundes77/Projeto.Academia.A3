@@ -12,7 +12,7 @@ namespace Projeto.Academia.A3.Services
 {
     public class MembroService
     {
-        // Método para adicionar um novo Membro
+        //  adicionar um novo Membro
         public bool AdicionarMembro(Membro membro)
         {
             // Criar a conexão com o banco de dados
@@ -39,6 +39,14 @@ namespace Projeto.Academia.A3.Services
 
                 if (resultado > 0)
                 {
+                    string idQuery = "SELECT LAST_INSERT_ID()";
+                    MySqlCommand idComando = new MySqlCommand(idQuery, conexao);
+                    int alunoId = Convert.ToInt32(idComando.ExecuteScalar()); // Recupera o ID gerado automaticamente
+
+                    // Agora podemos chamar o serviço de pagamentos com o AlunoId
+                    var pagamentoService = new PagamentoService();
+                    pagamentoService.GerarPagamentosPendentes(alunoId);
+
                     return true; // Se o comando foi bem-sucedido, retorna true
                 }
                 else
@@ -48,7 +56,7 @@ namespace Projeto.Academia.A3.Services
             }
             catch (Exception ex)
             {
-                // Em caso de erro, exibe a mensagem de erro
+                // Em caso de erro exibe a mensagem de erro cpf duplicado ex
                 MessageBox.Show("Erro ao adicionar membro: " + ex.Message);
                 return false;
             }
@@ -57,9 +65,11 @@ namespace Projeto.Academia.A3.Services
                 // Fecha a conexão após a operação
                 Conexao.FecharConexao(conexao);
             }
+
+            
         }
 
-        // Método para listar todos os membros
+        //  listar todos os membros
         public List<Membro> ListarMembros()
         {
             List<Membro> membros = new List<Membro>();
@@ -103,7 +113,7 @@ namespace Projeto.Academia.A3.Services
             return membros;
         }
 
-        //Método para buscar por CPF
+        //buscar por CPF
         public Membro BuscarMembroPorCPF(string cpf)
         {
             Membro membro = null;
