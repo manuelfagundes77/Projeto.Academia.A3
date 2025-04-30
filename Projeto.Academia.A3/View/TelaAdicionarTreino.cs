@@ -42,8 +42,8 @@ namespace Projeto.Academia.A3.View
                 campoCPF.Text = membro.CPF;
                 campoTelefone.Text = membro.Telefone;
                 campoEndereco.Text = membro.Endereco;
-                labelID.Text = membro.AlunoId.ToString();// Exibe o ID, que não pode ser alterado
-                labelData.Text = Uteis.FormatarData(membro.DataCadastro); // Exibe o Data de Cadastro, que não pode ser alterado
+                labelID.Text = membro.AlunoId.ToString();// Exibe o ID, que nao pode ser alterado
+                labelData.Text = Uteis.FormatarData(membro.DataCadastro); // Exibe o Data de Cadastro que não pode ser alterado
             }
         }
 
@@ -62,16 +62,16 @@ namespace Projeto.Academia.A3.View
                 return;
             }
 
-            // Exibe a caixa de diálogo de confirmação antes de editar
+            // Exibe a caixa de dialogo de confirmação antes de editar
             DialogResult result = MessageBox.Show("Tem certeza que deseja editar os dados do membro?", "Confirmar Edição", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-            // Se o usuário confirmar a edição
+            // Se o usuario confirmar a edicao
             if (result == DialogResult.Yes)
             {
                 // Cria o objeto Membro
                 Membro membro = new Membro
                 {
-                    AlunoId = int.Parse(labelID.Text), // Obtém o ID do membro
+                    AlunoId = int.Parse(labelID.Text), // Obtem o ID do membro
                     Nome = nome,
                     CPF = cpf,
                     Telefone = telefone,
@@ -81,7 +81,7 @@ namespace Projeto.Academia.A3.View
                 // Chama o controlador para editar o membro
                 _membroController.EditarMembro(membro);
             }
-            // Se o usuário clicar em "Não", não faz nada
+            // Se o usuário clicar nao  faz nada
             else
             {
                 MessageBox.Show("Edição cancelada.", "Cancelado", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -90,26 +90,20 @@ namespace Projeto.Academia.A3.View
     
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            // Obtém o CPF digitado no campo de busca
+            // Obtem o CPF digitado no campo de busca
             string cpf = campoBusca.Text.Trim();
 
             if (!string.IsNullOrEmpty(cpf))
             {
-                // Chama o método no controlador para buscar o membro
+                // Chama o metodo no controlador para buscar o membro
                 Membro membro = _membroController.BuscarMembroPorCPF(cpf);
 
 
                 //Recupera o objeto do controller com os dados
                 if (membro != null)
                 {
-                    _membroBuscado = membro; //salvando o membro na variavel global para repassar para outra pagina 
-                                             // Exibe os dados do membro nos campos
-                                             //campoNome.Text = membro.Nome;
-                                             //campoCPF.Text = membro.CPF;
-                                             //campoTelefone.Text = membro.Telefone;
-                                             //campoEndereco.Text = membro.Endereco;
-                                             //labelID.Text = membro.AlunoId.ToString(); // Exibe o ID, que não pode ser alterado
-                                             //labelData.Text = Uteis.FormatarData(membro.DataCadastro); // Exibe o Data de Cadastro, que não pode ser alterado
+                    _membroBuscado = membro; 
+                                            
 
                     PreencherCamposComMembro(membro);
 
@@ -123,17 +117,17 @@ namespace Projeto.Academia.A3.View
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
-            // Obtem o nome do membro exibido para mostrar na primeira confirmação
+            // Obtem o nome do membro exibido para mostrar na primeira confirmacao
             string nomeMembro = campoNome.Text.Trim();
 
-            // Verifica se o nome está preenchido, ou seja, se o membro está exibido
+            // Verifica se o nome esta preenchido, ou seja, se o membro esta exibido
             if (string.IsNullOrEmpty(nomeMembro))
             {
                 MessageBox.Show("Nenhum membro foi selecionado para exclusão.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            // Primeira confirmação: exibe o nome do membro que sera excluído
+            // Primeira confirmacao exibe o nome do membro que sera excluído
             DialogResult result1 = MessageBox.Show($"Tem certeza que deseja excluir o membro {nomeMembro}?",
                                                    "Confirmar Exclusão",
                                                    MessageBoxButtons.YesNo,
@@ -141,7 +135,7 @@ namespace Projeto.Academia.A3.View
 
             if (result1 == DialogResult.Yes)
             {
-                // Segunda confirmação: avisa que a exclusao e permanente
+                // Segunda confirmacao: avisa que a exclusao e permanente
                 DialogResult result2 = MessageBox.Show("Você está prestes a excluir os dados permanentemente. Deseja continuar?",
                                                        "Confirmar Exclusão Permanente",
                                                        MessageBoxButtons.YesNo,
@@ -149,7 +143,7 @@ namespace Projeto.Academia.A3.View
 
                 if (result2 == DialogResult.Yes)
                 {
-                    // Obtém o ID do membro a ser excluído
+                    // Obtém o ID do membro a ser excluido
                     int alunoId = int.Parse(labelID.Text);
 
                     // Chama o controlador para excluir o membro com base no ID

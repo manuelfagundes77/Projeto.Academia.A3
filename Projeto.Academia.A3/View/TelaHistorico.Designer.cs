@@ -66,6 +66,7 @@
             this.dataView.ReadOnly = true;
             this.dataView.Size = new System.Drawing.Size(466, 169);
             this.dataView.TabIndex = 4;
+            this.dataView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataView_CellContentClick);
             // 
             // label1
             // 

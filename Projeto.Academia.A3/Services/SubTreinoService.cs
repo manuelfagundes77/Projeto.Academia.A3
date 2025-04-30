@@ -65,5 +65,46 @@ namespace Projeto.Academia.A3.Services
             return sucesso; // Retorna se todos os subtreinos foram adicionados com sucesso
         }
 
+        public List<SubTreino> ObterSubTreinosComExercicios(int treinoId)
+        {
+            List<SubTreino> subTreinos = new List<SubTreino>();
+
+            string query = "SELECT * FROM SubTreinos WHERE TreinoId = @TreinoId";
+            using (MySqlConnection conexao = Conexao.ObterConexao())
+            {
+                MySqlCommand cmd = new MySqlCommand(query, conexao);
+                cmd.Parameters.AddWithValue("@TreinoId", treinoId);
+
+                using (MySqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        SubTreino subTreino = new SubTreino
+                        {
+                            SubTreinoId = reader.GetInt32("SubTreinoId"), // Nome correto da coluna
+                            Nome = reader.GetString("Nome"),
+                            TreinoId = reader.GetInt32("TreinoId")
+                        };
+
+                        // Buscar os exercícios para esse subtreino
+                        subTreino.Exercicios = ObterExerciciosPorSubTreinoId(subTreino.SubTreinoId);
+
+                        subTreinos.Add(subTreino);
+                    }
+                }
+            }
+
+            return subTreinos;
+        }
+
+
+
+        // Chama o método que está no serviço de Exercício
+        public List<Exercicio> ObterExerciciosPorSubTreinoId(int subTreinoId)
+        {
+            ExerciciosService exercicioService = new ExerciciosService();
+            return exercicioService.ObterExerciciosPorSubTreinoId(subTreinoId);
+        }
+
     }
 }

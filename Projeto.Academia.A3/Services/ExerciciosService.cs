@@ -61,5 +61,37 @@ namespace Projeto.Academia.A3.Services
 
             return sucesso;
         }
+
+        public List<Exercicio> ObterExerciciosPorSubTreinoId(int subTreinoId)
+        {
+            List<Exercicio> exercicios = new List<Exercicio>();
+
+            // Consultar os exercícios pelo ID do subtreino
+            string query = "SELECT * FROM Exercicios WHERE SubTreinoId = @SubTreinoId";
+            using (MySqlConnection conexao = Conexao.ObterConexao())
+            {
+                MySqlCommand cmd = new MySqlCommand(query, conexao);
+                cmd.Parameters.AddWithValue("@SubTreinoId", subTreinoId);
+
+                using (MySqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        Exercicio exercicio = new Exercicio
+                        {
+                            ExercicioId = reader.GetInt32("Id"),
+                            NomeExercicio = reader.GetString("NomeExercicio"),
+                            Serie = reader.GetString("Serie"),
+                            Repeticoes = reader.GetString("Repeticoes"),
+                            SubTreinoId = reader.GetInt32("SubTreinoId")
+                        };
+
+                        exercicios.Add(exercicio);
+                    }
+                }
+            }
+
+            return exercicios;
+        }
     }
 }

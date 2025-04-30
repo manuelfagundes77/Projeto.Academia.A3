@@ -98,5 +98,15 @@ namespace Projeto.Academia.A3.View
         {
 
         }
+
+        private void panelPrincipal_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

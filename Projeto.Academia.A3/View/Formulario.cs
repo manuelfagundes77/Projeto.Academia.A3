@@ -40,17 +40,17 @@ namespace Projeto.Academia.A3.View
             string telefone = campoTelefone.Text;
             DateTime dataCadastro = dateTimePicker1.Value;
 
-            // Verificando se algum campo está vazio
+            // Verificando se algum campo esta vazio
             if (string.IsNullOrWhiteSpace(nome) ||
                 string.IsNullOrWhiteSpace(cpf) ||
                 string.IsNullOrWhiteSpace(endereco) ||
                 string.IsNullOrWhiteSpace(telefone))
             {
                 MessageBox.Show("Preencha todos os campos!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return; // para o código aqui se faltar algo
+                return; // para o codigo aqui se faltar algo
             }
 
-            // Verifica se o CPF ou Telefone contém apenas números
+            // Verifica se o CPF ou Telefone contém apenas numeros
             if (!Uteis.ValidarSomenteNumeros(cpf, "CPF") || !Uteis.ValidarSomenteNumeros(telefone, "Telefone"))
             {
                 return;
@@ -66,7 +66,7 @@ namespace Projeto.Academia.A3.View
                 DataCadastro = dataCadastro
             };
 
-            // Chamando o método do Controller para adicionar o membro
+            // Chamando o metodo do Controller para adicionar o membro
             membroController.AdicionarMembro(novoMembro);
 
       

@@ -35,10 +35,10 @@ namespace Projeto.Academia.A3.View
 
         private void formatarTabela()
         {
-            // Esconde as colunas desnecessárias (caso tenha colunas extras)
+            // Esconde as colunas desnecessarias (caso tenha colunas extras)
             dataView.Columns["AlunoId"].Visible = false; // Esconde a coluna AlunoId
             dataView.Columns["TreinoId"].Visible = false; 
-            dataView.Columns["Tipo"].DisplayIndex = 0; // Tipo na primeira posição
+            dataView.Columns["Tipo"].DisplayIndex = 0; // Tipo na primeira posicao
             dataView.Columns["Descricao"].DisplayIndex = 1; 
             dataView.Columns["Duracao"].DisplayIndex = 3; 
             dataView.Columns["DataInicio"].DisplayIndex = 2;
@@ -79,6 +79,11 @@ namespace Projeto.Academia.A3.View
             {
                 MessageBox.Show("MenuLayout não encontrado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void dataView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

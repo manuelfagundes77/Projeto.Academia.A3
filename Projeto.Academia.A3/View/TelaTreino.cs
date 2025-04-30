@@ -37,21 +37,36 @@ namespace Projeto.Academia.A3.View
 
         }
 
-        private void btnAdicionarTreino_Click(object sender, EventArgs e)
+        private bool ValidarCamposTreino()
         {
-            // Verificar se foi selecionado um tipo de treino
             if (selecionarTipo.SelectedItem == null)
             {
                 MessageBox.Show("Por favor, selecione um tipo de treino.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
+                return false;
             }
 
-            // Verificar se a descrição está vazia
             if (string.IsNullOrWhiteSpace(campoDescricao.Text))
             {
                 MessageBox.Show("Por favor, preencha a descrição do treino.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
+                return false;
             }
+
+            if (listaExercicios.Items.Count == 0 || listaExerciciosB.Items.Count == 0 || listaExerciciosC.Items.Count == 0)
+            {
+                MessageBox.Show("Adicione pelo menos um exercício a cada subtreino.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            return true;
+        }
+
+
+        private void btnAdicionarTreino_Click(object sender, EventArgs e)
+        {
+           
+
+            if (!ValidarCamposTreino())
+                return;
 
             // Obter os valores dos campos do formulário
             string tipo = selecionarTipo.SelectedItem.ToString(); // Tipo do treino
@@ -62,7 +77,7 @@ namespace Projeto.Academia.A3.View
             // Criar um objeto Treino com os dados fornecidos
             Treino novoTreino = new Treino
             {
-                AlunoId = _membro.AlunoId, // Usando o AlunoId que foi passado para o formulário
+                AlunoId = _membro.AlunoId, 
                 Tipo = tipo,
                 Descricao = descricao,
                 Duracao = duracaoFormatada,
@@ -74,7 +89,7 @@ namespace Projeto.Academia.A3.View
 
            
 
-            // Chamar o método AdicionarTreino do controlador
+            // Chamar o metodo AdicionarTreino do controlador
             int treinoId = treinoController.AdicionarTreino(novoTreino);
 
             if (treinoId > 0)
@@ -90,19 +105,20 @@ namespace Projeto.Academia.A3.View
             }
 
 
-            selecionarTipo.SelectedIndex = -1; // Limpa a seleção do ComboBox
-            campoDescricao.Text = string.Empty; // Limpa o campo de descrição
-            pegaData.Value = DateTime.Today; // Reseta a data para hoje
-            dataDuracao.Value = DateTime.Today; // Também reseta a duração para hoje
+            selecionarTipo.SelectedIndex = -1; // Limpa o ComboBox
+            campoDescricao.Text = string.Empty; // Limpa o campo 
+            pegaData.Value = DateTime.Today; // reseta a data para hj
+            dataDuracao.Value = DateTime.Today; //  reseta a  duracao para hj
         }
 
+        //metodo para chamar o controller que salva os exercicios no bd
         private bool AdicionarExerciciosAoTreino(int SubTreinoID, List<Exercicio> listaExercicios)
         {
             ExerciciosController exerciciosController = new ExerciciosController();
 
             foreach (var exercicio in listaExercicios)
             {
-                exercicio.SubTreinoId = SubTreinoID; // <- CORRETO AGORA
+                exercicio.SubTreinoId = SubTreinoID; 
                 bool sucesso = exerciciosController.AdicionarExercicio(exercicio);
 
                 if (!sucesso)
@@ -115,6 +131,7 @@ namespace Projeto.Academia.A3.View
             return true;
         }
 
+        //Metodo criado para  mostrar  listBox na view e salvar nas lista abc referente aos tipo de treino
         private void AdicionarExercicioNaListaCorreta(Exercicio exercicio)
         {
             if (selecionaSubtreino.SelectedItem == null)
@@ -162,6 +179,7 @@ namespace Projeto.Academia.A3.View
             }
         }
 
+        //metodo criado para criar o exercicio e chamar o metodo adicionarexercicionalistacorreta ex a b c
         private void btnAddExercicio_Click(object sender, EventArgs e)
         {
 
@@ -187,13 +205,14 @@ namespace Projeto.Academia.A3.View
 
             AdicionarExercicioNaListaCorreta(novoExercicio);
 
-            // Limpar os campos de seleção após adicionar
+            // Limpar os campos da selecao
             selecionaExercicio.SelectedIndex = -1;
             selecionaSerie.SelectedIndex = -1;
             selecionaRepeticoes.SelectedIndex = -1;
 
         }
 
+        //metodo para colocoar no btn criartreino para ser chamdo  cria o subtreino e chama o metodo add exercicio 
         private void AdicionarSubtreinosComExercicios(int treinoId)
         {
             SubTreinoController subTreinoController = new SubTreinoController();
@@ -204,7 +223,7 @@ namespace Projeto.Academia.A3.View
             {
                 SubTreino subA = new SubTreino
                 {
-                    Nome = "A - Peito",  // ou você pode montar dinamicamente se quiser
+                    Nome = "A - Peito",  
                     TreinoId = treinoId
                 };
 
@@ -218,7 +237,7 @@ namespace Projeto.Academia.A3.View
             {
                 SubTreino subB = new SubTreino
                 {
-                    Nome = "B - Pernas",  // ou outro nome de sua escolha
+                    Nome = "B - Pernas",  
                     TreinoId = treinoId
                 };
 
@@ -232,7 +251,7 @@ namespace Projeto.Academia.A3.View
             {
                 SubTreino subC = new SubTreino
                 {
-                    Nome = "C - Costas",  // ou qualquer nome que você prefira
+                    Nome = "C - Costas",  
                     TreinoId = treinoId
                 };
 

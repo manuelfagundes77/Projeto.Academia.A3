@@ -11,5 +11,7 @@ namespace Projeto.Academia.A3.Models
         public int SubTreinoId { get; set; } // Chave primária
         public int TreinoId { get; set; }    // Chave estrangeira, ligação com Treino
         public string Nome { get; set; }     // Exemplo: "A - Peito", "B - Pernas"
+
+        public List<Exercicio> Exercicios { get; set; } // Lista de exercícios
     }
 }

@@ -32,7 +32,7 @@ namespace Projeto.Academia.A3.View
             dataGrid.CellMouseMove += dataGrid_CellMouseMove;
         }
 
-        // Método para carregar membros no DataGridView
+        // Metodo para carregar membros no DataGridView
         private void CarregarPagamentosNoGrid(int alunoId)
         {
             // Obtém a lista de pagamentos
@@ -120,11 +120,11 @@ namespace Projeto.Academia.A3.View
                     return;
                 }
 
-                // Caixa de diálogo para confirmação personalizada
+                // Caixa de dialogo para confirmação personalizada
                 DateTime dataPagamento = Convert.ToDateTime(dataGrid.Rows[e.RowIndex].Cells["DataPagamento"].Value);
                 string mesAnoReferencia = dataPagamento.ToString("MMMM 'de' yyyy", new System.Globalization.CultureInfo("pt-BR"));
 
-                // Caixa de diálogo para confirmação
+                // Caixa de dialogo para confirmacao
                 DialogResult resultado = MessageBox.Show(
                 $"Deseja realmente confirmar o pagamento do mês de {mesAnoReferencia}?",
                 "Confirmação",

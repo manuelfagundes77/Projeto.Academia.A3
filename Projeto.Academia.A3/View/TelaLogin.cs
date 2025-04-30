@@ -34,12 +34,12 @@ namespace Projeto.Academia.A3.View
             }
             else
             {
-                // Aqui você pode fazer algo em caso de erro na conexão, como mostrar uma mensagem
+                Console.WriteLine("sem conexao");
             }
         }
 
         private void btnLogar_Click(object sender, EventArgs e)
-        { // Lógica para validar o login e senha
+        { // Logica para validar o login e senha
             string login = campoLogin.Text;
             string senha = campoSenha.Text;
 
@@ -47,7 +47,7 @@ namespace Projeto.Academia.A3.View
 
             if (loginValido)
             {
-                // Se o login for válido, busca os dados do funcionário
+                // Se o login for valido, busca os dados do funcionario
                 Funcionario funcionarioLogado = _funcionarioController.BuscarFuncionarioPorLogin(login, senha); // Método para buscar os dados do funcionário
 
                 // Armazenando o funcionário logado na classe FuncionarioLogado
@@ -60,7 +60,7 @@ namespace Projeto.Academia.A3.View
             }
             else
             {
-                // Se o login for inválido, mostra um alerta
+                // Se o login for invalido mostra um alerta
                 MessageBox.Show("Login ou Senha incorretos!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }

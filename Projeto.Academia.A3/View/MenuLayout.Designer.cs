@@ -32,7 +32,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelLuzVerde = new System.Windows.Forms.Panel();
             this.labelLogado = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.pagamentos = new System.Windows.Forms.Button();
             this.adicionarTreino = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -49,13 +48,13 @@
             this.panelPrincipal.Name = "panelPrincipal";
             this.panelPrincipal.Size = new System.Drawing.Size(761, 450);
             this.panelPrincipal.TabIndex = 2;
+            this.panelPrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPrincipal_Paint);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.panelLuzVerde);
             this.panel1.Controls.Add(this.labelLogado);
-            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pagamentos);
             this.panel1.Controls.Add(this.adicionarTreino);
             this.panel1.Controls.Add(this.button2);
@@ -86,15 +85,6 @@
             this.labelLogado.Size = new System.Drawing.Size(35, 13);
             this.labelLogado.TabIndex = 8;
             this.labelLogado.Text = "label2";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "label1";
             // 
             // pagamentos
             // 
@@ -218,7 +208,6 @@
         private System.Windows.Forms.Button adicionarTreino;
         private System.Windows.Forms.Button pagamentos;
         private System.Windows.Forms.Label labelLogado;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelLuzVerde;
     }
 }
