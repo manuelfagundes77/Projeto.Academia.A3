@@ -16,6 +16,7 @@ namespace Projeto.Academia.A3.View
     public partial class TelaTreino : Form
     {
         private Membro _membro;
+        private List<Exercicio> listaDeExercicios = new List<Exercicio>();
         public TelaTreino(Membro membro)
         {
             InitializeComponent();
@@ -69,14 +70,53 @@ namespace Projeto.Academia.A3.View
             // Criar um controlador do Treino
             TreinoController treinoController = new TreinoController();
 
+           
+
             // Chamar o método AdicionarTreino do controlador
-            treinoController.AdicionarTreino(novoTreino);
+            int treinoId = treinoController.AdicionarTreino(novoTreino);
+
+            if (treinoId > 0)
+            {
+                // Chama o método que adiciona os exercícios ao treino
+                bool exerciciosAdicionados = AdicionarExerciciosAoTreino(treinoId, listaDeExercicios);
+
+                if (exerciciosAdicionados)
+                {
+                 //   MessageBox.Show("Treino e exercícios adicionados com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Erro ao adicionar o treino.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
 
             selecionarTipo.SelectedIndex = -1; // Limpa a seleção do ComboBox
             campoDescricao.Text = string.Empty; // Limpa o campo de descrição
             pegaData.Value = DateTime.Today; // Reseta a data para hoje
             dataDuracao.Value = DateTime.Today; // Também reseta a duração para hoje
         }
+
+        private bool AdicionarExerciciosAoTreino(int treinoId, List<Exercicio> listaExercicios)
+        {
+            foreach (var exercicio in listaExercicios)
+            {
+                exercicio.TreinoId = treinoId; // Associa o treinoId ao exercício
+
+                // Chamar o controlador para adicionar o exercício
+                ExerciciosController exerciciosController = new ExerciciosController();
+                bool sucesso = exerciciosController.AdicionarExercicio(exercicio);
+
+                if (!sucesso)
+                {
+                    MessageBox.Show("Erro ao adicionar exercício.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false; // Retorna falso se houve erro
+                }
+            }
+
+            return true; // Retorna verdadeiro se todos os exercícios foram adicionados com sucesso
+        }
+
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
@@ -92,5 +132,43 @@ namespace Projeto.Academia.A3.View
                 MessageBox.Show("MenuLayout não encontrado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnAddExercicio_Click(object sender, EventArgs e)
+        {
+
+            // Verificar se todos os campos necessários estão preenchidos
+            if (selecionaExercicio.SelectedItem == null || selecionaSerie.SelectedItem == null || selecionaRepeticoes.SelectedItem == null)
+            {
+                MessageBox.Show("Por favor, selecione todos os campos: exercício, série e repetições.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Obter os valores dos campos
+            string nomeExercicio = selecionaExercicio.SelectedItem.ToString();
+            string serie = selecionaSerie.SelectedItem.ToString();
+            string repeticoes = selecionaRepeticoes.SelectedItem.ToString();
+
+            // Criar o objeto Exercicio
+            Exercicio novoExercicio = new Exercicio
+            {
+                NomeExercicio = nomeExercicio,
+                Serie = serie,
+                Repeticoes = repeticoes
+            };
+
+            // Adicionar o exercício à lista na ListBox
+            listaExercicios.Items.Add(novoExercicio);
+
+            // Adicionar o exercício à lista de exercícios global para chamar quando adicionar o treino
+            listaDeExercicios.Add(novoExercicio);
+
+            // Limpar os campos de seleção após adicionar
+            selecionaExercicio.SelectedIndex = -1;
+            selecionaSerie.SelectedIndex = -1;
+            selecionaRepeticoes.SelectedIndex = -1;
+
+        }
+
+      
     }
 }

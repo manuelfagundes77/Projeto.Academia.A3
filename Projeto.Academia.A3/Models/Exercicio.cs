@@ -13,5 +13,11 @@ namespace Projeto.Academia.A3.Models
         public string NomeExercicio { get; set; }
         public string Serie { get; set; }
         public string Repeticoes { get; set; }
+
+
+        public override string ToString()
+        {
+            return $" {NomeExercicio} - Series: {Serie} - Repetições: {Repeticoes} ";
+        }
     }
 }

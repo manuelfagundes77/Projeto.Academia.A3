@@ -18,20 +18,24 @@ namespace Projeto.Academia.A3.Controller
             treinoService = new TreinoService();
         }
 
-        public void AdicionarTreino(Treino treino)
+        public int AdicionarTreino(Treino treino)
         {
             try
             {
-                // Chama o serviço para adicionar o treino
-                treinoService.AdicionarTreino(treino);
+                // Chama o serviço para adicionar o treino e retorna o ID gerado
+                int treinoId = treinoService.AdicionarTreino(treino);
+              
+               
 
                 // mostra a mensagem de sucesso
                 MessageBox.Show("Treino adicionado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return treinoId; // Retorna o ID do treino
             }
             catch (Exception ex)
             {
                 // mostra a mensagem de erro
                 MessageBox.Show($"Erro ao adicionar o treino: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return -1; // Retorna -1 em caso de erro
             }
         }
 

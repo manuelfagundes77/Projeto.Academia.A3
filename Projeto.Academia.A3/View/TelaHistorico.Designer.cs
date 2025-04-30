@@ -64,7 +64,7 @@
             this.dataView.Location = new System.Drawing.Point(188, 104);
             this.dataView.Name = "dataView";
             this.dataView.ReadOnly = true;
-            this.dataView.Size = new System.Drawing.Size(439, 169);
+            this.dataView.Size = new System.Drawing.Size(466, 169);
             this.dataView.TabIndex = 4;
             // 
             // label1

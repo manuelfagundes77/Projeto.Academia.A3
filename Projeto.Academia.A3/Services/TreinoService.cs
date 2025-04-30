@@ -12,42 +12,39 @@ namespace Projeto.Academia.A3.Services
     public class TreinoService
     {
         // Método para adicionar um novo treino
-        public bool AdicionarTreino(Treino treino)
+        public int AdicionarTreino(Treino treino)
         {
             MySqlConnection conexao = Conexao.ObterConexao();
             if (conexao == null)
             {
-                return false; // Retorna false se a conexão não foi estabelecida
+                return -1;
             }
 
             try
             {
-                // Comando SQL para inserir um novo treino
                 string query = "INSERT INTO treinos (AlunoId, Tipo, Descricao, Duracao, DataInicio) " +
-                               "VALUES (@AlunoId, @Tipo, @Descricao, @Duracao, @DataInicio)";
+                               "VALUES (@AlunoId, @Tipo, @Descricao, @Duracao, @DataInicio); SELECT LAST_INSERT_ID();";
 
                 MySqlCommand cmd = new MySqlCommand(query, conexao);
 
-                // Parâmetros da query
                 cmd.Parameters.AddWithValue("@AlunoId", treino.AlunoId);
                 cmd.Parameters.AddWithValue("@Tipo", treino.Tipo);
                 cmd.Parameters.AddWithValue("@Descricao", treino.Descricao);
                 cmd.Parameters.AddWithValue("@Duracao", treino.Duracao);
                 cmd.Parameters.AddWithValue("@DataInicio", treino.DataInicio);
 
-                // Executa o comando
-                int resultado = cmd.ExecuteNonQuery();
-                return resultado > 0; // Retorna true se uma linha foi afetada (sucesso na inserção)
+                // IMPORTANTE: executa o comando e pega o ID gerado
+                int treinoId = Convert.ToInt32(cmd.ExecuteScalar());
+
+                return treinoId;// RETORNA o id criado do treino para adicionar aos exercicios 
             }
             catch (Exception ex)
             {
-                // Se ocorrer um erro, exibe o erro e retorna false
                 Console.WriteLine($"Erro ao adicionar treino: {ex.Message}");
-                return false;
+                return -1;
             }
             finally
             {
-                // Fecha a conexão com o banco de dados
                 Conexao.FecharConexao(conexao);
             }
         }
