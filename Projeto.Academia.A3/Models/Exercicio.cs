@@ -9,7 +9,7 @@ namespace Projeto.Academia.A3.Models
     public class Exercicio
     {
         public int ExercicioId { get; set; }
-        public int TreinoId { get; set; }  // Este campo será usado ao salvar
+        public int SubTreinoId { get; set; }
         public string NomeExercicio { get; set; }
         public string Serie { get; set; }
         public string Repeticoes { get; set; }

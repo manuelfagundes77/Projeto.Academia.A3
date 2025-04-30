@@ -51,6 +51,9 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.selecionaSubtreino = new System.Windows.Forms.ComboBox();
+            this.listaExerciciosB = new System.Windows.Forms.ListBox();
+            this.listaExerciciosC = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // label1
@@ -206,7 +209,7 @@
             "Levantamento Terra",
             "Rosca Direta",
             "Rosca Martelo"});
-            this.selecionaExercicio.Location = new System.Drawing.Point(257, 217);
+            this.selecionaExercicio.Location = new System.Drawing.Point(251, 202);
             this.selecionaExercicio.Name = "selecionaExercicio";
             this.selecionaExercicio.Size = new System.Drawing.Size(138, 21);
             this.selecionaExercicio.TabIndex = 14;
@@ -221,7 +224,7 @@
             "5",
             "6",
             "7"});
-            this.selecionaSerie.Location = new System.Drawing.Point(452, 217);
+            this.selecionaSerie.Location = new System.Drawing.Point(450, 202);
             this.selecionaSerie.Name = "selecionaSerie";
             this.selecionaSerie.Size = new System.Drawing.Size(58, 21);
             this.selecionaSerie.TabIndex = 15;
@@ -235,7 +238,7 @@
             "10",
             "12",
             "14"});
-            this.selecionaRepeticoes.Location = new System.Drawing.Point(590, 217);
+            this.selecionaRepeticoes.Location = new System.Drawing.Point(578, 208);
             this.selecionaRepeticoes.Name = "selecionaRepeticoes";
             this.selecionaRepeticoes.Size = new System.Drawing.Size(58, 21);
             this.selecionaRepeticoes.TabIndex = 16;
@@ -245,7 +248,7 @@
             this.btnAddExercicio.BackgroundImage = global::Projeto.Academia.A3.Properties.Resources.iconadd;
             this.btnAddExercicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAddExercicio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddExercicio.Location = new System.Drawing.Point(694, 215);
+            this.btnAddExercicio.Location = new System.Drawing.Point(283, 229);
             this.btnAddExercicio.Name = "btnAddExercicio";
             this.btnAddExercicio.Size = new System.Drawing.Size(28, 23);
             this.btnAddExercicio.TabIndex = 17;
@@ -255,7 +258,7 @@
             // listaExercicios
             // 
             this.listaExercicios.FormattingEnabled = true;
-            this.listaExercicios.Location = new System.Drawing.Point(339, 257);
+            this.listaExercicios.Location = new System.Drawing.Point(180, 266);
             this.listaExercicios.Name = "listaExercicios";
             this.listaExercicios.Size = new System.Drawing.Size(235, 95);
             this.listaExercicios.TabIndex = 18;
@@ -273,7 +276,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(198, 220);
+            this.label8.Location = new System.Drawing.Point(192, 208);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(53, 13);
             this.label8.TabIndex = 20;
@@ -282,7 +285,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(412, 220);
+            this.label9.Location = new System.Drawing.Point(411, 205);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(34, 13);
             this.label9.TabIndex = 21;
@@ -291,17 +294,48 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(523, 220);
+            this.label10.Location = new System.Drawing.Point(514, 210);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(64, 13);
             this.label10.TabIndex = 22;
             this.label10.Text = "Repetiçoes:";
+            // 
+            // selecionaSubtreino
+            // 
+            this.selecionaSubtreino.FormattingEnabled = true;
+            this.selecionaSubtreino.Items.AddRange(new object[] {
+            "Tipo A",
+            "Tipo B",
+            "Tipo C"});
+            this.selecionaSubtreino.Location = new System.Drawing.Point(656, 208);
+            this.selecionaSubtreino.Name = "selecionaSubtreino";
+            this.selecionaSubtreino.Size = new System.Drawing.Size(92, 21);
+            this.selecionaSubtreino.TabIndex = 23;
+            // 
+            // listaExerciciosB
+            // 
+            this.listaExerciciosB.FormattingEnabled = true;
+            this.listaExerciciosB.Location = new System.Drawing.Point(458, 266);
+            this.listaExerciciosB.Name = "listaExerciciosB";
+            this.listaExerciciosB.Size = new System.Drawing.Size(120, 95);
+            this.listaExerciciosB.TabIndex = 24;
+            // 
+            // listaExerciciosC
+            // 
+            this.listaExerciciosC.FormattingEnabled = true;
+            this.listaExerciciosC.Location = new System.Drawing.Point(642, 266);
+            this.listaExerciciosC.Name = "listaExerciciosC";
+            this.listaExerciciosC.Size = new System.Drawing.Size(120, 95);
+            this.listaExerciciosC.TabIndex = 25;
             // 
             // TelaTreino
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.listaExerciciosC);
+            this.Controls.Add(this.listaExerciciosB);
+            this.Controls.Add(this.selecionaSubtreino);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -358,5 +392,8 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox selecionaSubtreino;
+        private System.Windows.Forms.ListBox listaExerciciosB;
+        private System.Windows.Forms.ListBox listaExerciciosC;
     }
 }

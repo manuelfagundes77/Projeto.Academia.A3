@@ -102,6 +102,7 @@
     <Compile Include="Controller\FuncionarioController.cs" />
     <Compile Include="Controller\MembroController.cs" />
     <Compile Include="Controller\PagamentoController.cs" />
+    <Compile Include="Controller\SubTreinoController.cs" />
     <Compile Include="Controller\TreinoController.cs" />
     <Compile Include="Data\Conexao.cs" />
     <Compile Include="Models\Exercicio.cs" />
@@ -109,6 +110,7 @@
     <Compile Include="Models\Funcionarios.cs" />
     <Compile Include="Models\Membro.cs" />
     <Compile Include="Models\Pagamento.cs" />
+    <Compile Include="Models\SubTreino.cs" />
     <Compile Include="Models\Treino.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -116,6 +118,7 @@
     <Compile Include="Services\FuncionarioService.cs" />
     <Compile Include="Services\MembroService.cs" />
     <Compile Include="Services\PagamentoService.cs" />
+    <Compile Include="Services\SubTreinoService.cs" />
     <Compile Include="Services\TreinoService.cs" />
     <Compile Include="Utils\Uteis.cs" />
     <Compile Include="View\Formulario.cs">

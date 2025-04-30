@@ -21,12 +21,13 @@ namespace Projeto.Academia.A3.Services
 
             try
             {
-                string query = "INSERT INTO exercicios (TreinoId, Nome, Serie, Repeticoes) " +
-                               "VALUES (@TreinoId, @Nome, @Serie, @Repeticoes)";
+                string query = @"INSERT INTO exercicios 
+                         (SubTreinoId, Nome, Serie, Repeticoes)
+                         VALUES (@SubTreinoId, @Nome, @Serie, @Repeticoes)";
 
                 MySqlCommand cmd = new MySqlCommand(query, conexao);
 
-                cmd.Parameters.AddWithValue("@TreinoId", exercicio.TreinoId);
+                cmd.Parameters.AddWithValue("@SubTreinoId", exercicio.SubTreinoId); // Agora usando SubTreinoId
                 cmd.Parameters.AddWithValue("@Nome", exercicio.NomeExercicio);
                 cmd.Parameters.AddWithValue("@Serie", exercicio.Serie);
                 cmd.Parameters.AddWithValue("@Repeticoes", exercicio.Repeticoes);
@@ -36,7 +37,7 @@ namespace Projeto.Academia.A3.Services
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Erro ao adicionar exercício: {ex.Message}");
+                Console.WriteLine($"Erro ao adicionar exercício: ao service {ex.Message}");
                 return false;
             }
             finally
@@ -45,13 +46,13 @@ namespace Projeto.Academia.A3.Services
             }
         }
 
-        public bool AdicionarListaExercicios(List<Exercicio> listaExercicios, int treinoId)
+        public bool AdicionarListaExercicios(List<Exercicio> listaExercicios, int SubTreinoId)
         {
             bool sucesso = true;
 
             foreach (var exercicio in listaExercicios)
             {
-                exercicio.TreinoId = treinoId;
+                exercicio.SubTreinoId = SubTreinoId;
                 if (!AdicionarExercicio(exercicio))
                 {
                     sucesso = false;

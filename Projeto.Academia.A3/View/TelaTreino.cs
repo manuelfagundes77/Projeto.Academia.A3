@@ -17,6 +17,8 @@ namespace Projeto.Academia.A3.View
     {
         private Membro _membro;
         private List<Exercicio> listaDeExercicios = new List<Exercicio>();
+        private List<Exercicio> listaDeExerciciosB = new List<Exercicio>(); // Tipo B
+        private List<Exercicio> listaDeExerciciosC = new List<Exercicio>(); // Tipo C
         public TelaTreino(Membro membro)
         {
             InitializeComponent();
@@ -77,14 +79,11 @@ namespace Projeto.Academia.A3.View
 
             if (treinoId > 0)
             {
-                // Chama o método que adiciona os exercícios ao treino
-                bool exerciciosAdicionados = AdicionarExerciciosAoTreino(treinoId, listaDeExercicios);
+                AdicionarSubtreinosComExercicios(treinoId);
 
-                if (exerciciosAdicionados)
-                {
-                 //   MessageBox.Show("Treino e exercícios adicionados com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
+                MessageBox.Show("Treino e subtreinos com exercícios adicionados com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+
             else
             {
                 MessageBox.Show("Erro ao adicionar o treino.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -97,25 +96,55 @@ namespace Projeto.Academia.A3.View
             dataDuracao.Value = DateTime.Today; // Também reseta a duração para hoje
         }
 
-        private bool AdicionarExerciciosAoTreino(int treinoId, List<Exercicio> listaExercicios)
+        private bool AdicionarExerciciosAoTreino(int SubTreinoID, List<Exercicio> listaExercicios)
         {
+            ExerciciosController exerciciosController = new ExerciciosController();
+
             foreach (var exercicio in listaExercicios)
             {
-                exercicio.TreinoId = treinoId; // Associa o treinoId ao exercício
-
-                // Chamar o controlador para adicionar o exercício
-                ExerciciosController exerciciosController = new ExerciciosController();
+                exercicio.SubTreinoId = SubTreinoID; // <- CORRETO AGORA
                 bool sucesso = exerciciosController.AdicionarExercicio(exercicio);
 
                 if (!sucesso)
                 {
-                    MessageBox.Show("Erro ao adicionar exercício.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return false; // Retorna falso se houve erro
+                    MessageBox.Show("Erro ao adicionar exercício. volta do controler", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
                 }
             }
 
-            return true; // Retorna verdadeiro se todos os exercícios foram adicionados com sucesso
+            return true;
         }
+
+        private void AdicionarExercicioNaListaCorreta(Exercicio exercicio)
+        {
+            if (selecionaSubtreino.SelectedItem == null)
+            {
+                MessageBox.Show("Por favor, selecione um tipo de subtreino (A, B ou C).", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            string tipoSelecionado = selecionaSubtreino.SelectedItem.ToString();
+
+            switch (tipoSelecionado)
+            {
+                case "Tipo A":
+                    listaDeExercicios.Add(exercicio);
+                    listaExercicios.Items.Add(exercicio);
+                    break;
+                case "Tipo B":
+                    listaDeExerciciosB.Add(exercicio);
+                    listaExerciciosB.Items.Add(exercicio);
+                    break;
+                case "Tipo C":
+                    listaDeExerciciosC.Add(exercicio);
+                    listaExerciciosC.Items.Add(exercicio);
+                    break;
+                default:
+                    MessageBox.Show("Tipo de subtreino inválido.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    break;
+            }
+        }
+
 
 
         private void btnVoltar_Click(object sender, EventArgs e)
@@ -156,11 +185,7 @@ namespace Projeto.Academia.A3.View
                 Repeticoes = repeticoes
             };
 
-            // Adicionar o exercício à lista na ListBox
-            listaExercicios.Items.Add(novoExercicio);
-
-            // Adicionar o exercício à lista de exercícios global para chamar quando adicionar o treino
-            listaDeExercicios.Add(novoExercicio);
+            AdicionarExercicioNaListaCorreta(novoExercicio);
 
             // Limpar os campos de seleção após adicionar
             selecionaExercicio.SelectedIndex = -1;
@@ -169,6 +194,55 @@ namespace Projeto.Academia.A3.View
 
         }
 
-      
+        private void AdicionarSubtreinosComExercicios(int treinoId)
+        {
+            SubTreinoController subTreinoController = new SubTreinoController();
+            ExerciciosController exerciciosController = new ExerciciosController();
+
+            // Subtreino A
+            if (listaDeExercicios.Any())
+            {
+                SubTreino subA = new SubTreino
+                {
+                    Nome = "A - Peito",  // ou você pode montar dinamicamente se quiser
+                    TreinoId = treinoId
+                };
+
+                int subAId = subTreinoController.AdicionarSubTreino(subA);
+           
+              AdicionarExerciciosAoTreino(subAId, listaDeExercicios);
+            }
+
+            // Subtreino B
+            if (listaDeExerciciosB.Any())
+            {
+                SubTreino subB = new SubTreino
+                {
+                    Nome = "B - Pernas",  // ou outro nome de sua escolha
+                    TreinoId = treinoId
+                };
+
+                int subBId = subTreinoController.AdicionarSubTreino(subB);
+                
+                AdicionarExerciciosAoTreino(subBId, listaDeExerciciosB);
+            }
+
+            // Subtreino C
+            if (listaDeExerciciosC.Any())
+            {
+                SubTreino subC = new SubTreino
+                {
+                    Nome = "C - Costas",  // ou qualquer nome que você prefira
+                    TreinoId = treinoId
+                };
+
+                int subCId = subTreinoController.AdicionarSubTreino(subC);
+               
+                AdicionarExerciciosAoTreino(subCId, listaDeExerciciosC);
+            }
+        }
+
+
+
     }
 }
