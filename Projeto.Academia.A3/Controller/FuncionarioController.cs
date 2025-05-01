@@ -63,5 +63,11 @@ namespace Projeto.Academia.A3.Controller
                 throw new Exception("Erro ao buscar funcionário: " + ex.Message);
             }
         }
+
+        public List<Funcionario> ObterTodosFuncionarios()
+        {
+            FuncionarioService service = new FuncionarioService();
+            return service.ObterTodosFuncionarios();
+        }
     }
 }

@@ -97,5 +97,43 @@ namespace Projeto.Academia.A3.Services
             }
         }
 
+        public List<Funcionario> ObterTodosFuncionarios()
+        {
+            MySqlConnection conexao = Conexao.ObterConexao();
+            if (conexao == null) return null;
+
+            List<Funcionario> funcionarios = new List<Funcionario>();
+
+            try
+            {
+                string query = "SELECT FuncionarioId, Nome FROM funcionario";
+                MySqlCommand cmd = new MySqlCommand(query, conexao);
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Funcionario func = new Funcionario
+                    {
+                        FuncionarioId = reader.GetInt32("FuncionarioId"),
+                        Nome = reader.GetString("Nome")
+                    };
+
+                    funcionarios.Add(func);
+                }
+
+                return funcionarios;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao obter funcionários: {ex.Message}");
+                return null;
+            }
+            finally
+            {
+                Conexao.FecharConexao(conexao);
+            }
+        }
+
+
     }
 }

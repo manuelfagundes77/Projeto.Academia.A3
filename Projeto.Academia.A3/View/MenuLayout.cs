@@ -108,5 +108,10 @@ namespace Projeto.Academia.A3.View
         {
 
         }
+
+        private void buscarTreinoFunc_Click(object sender, EventArgs e)
+        {
+            AbrirFormNoPainel(new TelaFuncionarioTreinos());
+        }
     }
 }

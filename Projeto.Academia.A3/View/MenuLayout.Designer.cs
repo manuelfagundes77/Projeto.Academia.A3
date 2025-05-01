@@ -30,8 +30,9 @@
         {
             this.panelPrincipal = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panelLuzVerde = new System.Windows.Forms.Panel();
             this.labelLogado = new System.Windows.Forms.Label();
+            this.buscarTreinoFunc = new System.Windows.Forms.Button();
+            this.panelLuzVerde = new System.Windows.Forms.Panel();
             this.pagamentos = new System.Windows.Forms.Button();
             this.adicionarTreino = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -53,6 +54,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
+            this.panel1.Controls.Add(this.buscarTreinoFunc);
             this.panel1.Controls.Add(this.panelLuzVerde);
             this.panel1.Controls.Add(this.labelLogado);
             this.panel1.Controls.Add(this.pagamentos);
@@ -67,6 +69,36 @@
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // labelLogado
+            // 
+            this.labelLogado.AutoSize = true;
+            this.labelLogado.Location = new System.Drawing.Point(3, 428);
+            this.labelLogado.Name = "labelLogado";
+            this.labelLogado.Size = new System.Drawing.Size(35, 13);
+            this.labelLogado.TabIndex = 8;
+            this.labelLogado.Text = "label2";
+            // 
+            // buscarTreinoFunc
+            // 
+            this.buscarTreinoFunc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buscarTreinoFunc.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buscarTreinoFunc.FlatAppearance.BorderSize = 0;
+            this.buscarTreinoFunc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buscarTreinoFunc.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buscarTreinoFunc.ForeColor = System.Drawing.Color.Black;
+            this.buscarTreinoFunc.Image = global::Projeto.Academia.A3.Properties.Resources.iconlistaTreinosss;
+            this.buscarTreinoFunc.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buscarTreinoFunc.Location = new System.Drawing.Point(-2, 261);
+            this.buscarTreinoFunc.Name = "buscarTreinoFunc";
+            this.buscarTreinoFunc.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.buscarTreinoFunc.Size = new System.Drawing.Size(156, 48);
+            this.buscarTreinoFunc.TabIndex = 10;
+            this.buscarTreinoFunc.Text = "Treinos do Funcionario:";
+            this.buscarTreinoFunc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buscarTreinoFunc.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.buscarTreinoFunc.UseVisualStyleBackColor = false;
+            this.buscarTreinoFunc.Click += new System.EventHandler(this.buscarTreinoFunc_Click);
+            // 
             // panelLuzVerde
             // 
             this.panelLuzVerde.BackgroundImage = global::Projeto.Academia.A3.Properties.Resources.iconluzVerde;
@@ -76,15 +108,6 @@
             this.panelLuzVerde.Size = new System.Drawing.Size(21, 19);
             this.panelLuzVerde.TabIndex = 9;
             this.panelLuzVerde.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLuzVerde_Paint);
-            // 
-            // labelLogado
-            // 
-            this.labelLogado.AutoSize = true;
-            this.labelLogado.Location = new System.Drawing.Point(3, 428);
-            this.labelLogado.Name = "labelLogado";
-            this.labelLogado.Size = new System.Drawing.Size(35, 13);
-            this.labelLogado.TabIndex = 8;
-            this.labelLogado.Text = "label2";
             // 
             // pagamentos
             // 
@@ -209,5 +232,6 @@
         private System.Windows.Forms.Button pagamentos;
         private System.Windows.Forms.Label labelLogado;
         private System.Windows.Forms.Panel panelLuzVerde;
+        private System.Windows.Forms.Button buscarTreinoFunc;
     }
 }

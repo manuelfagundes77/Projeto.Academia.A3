@@ -5,15 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Projeto.Academia.A3.Models
-{
-    public class Treino
+{       
+    //TREINO CRIADO PARA USAR JOIN DO SQL NELE  FAZER MENOS requiciçoes e metodos
+    public class TreinoComAlunoDTO
     {
         public int TreinoId { get; set; }
-        public int AlunoId { get; set; } // FK (chave estrangeira)
-        public int? FuncionarioId { get; set; } // FK (chave estrangeira)
         public string Tipo { get; set; }
         public string Descricao { get; set; }
-        public string Duracao { get; set; } // em minutos, por exemplo
+        public string Duracao { get; set; }
         public DateTime DataInicio { get; set; }
+        public string NomeAluno { get; set; }
     }
 }

@@ -112,6 +112,7 @@
     <Compile Include="Models\Pagamento.cs" />
     <Compile Include="Models\SubTreino.cs" />
     <Compile Include="Models\Treino.cs" />
+    <Compile Include="Models\TreinoComAlunoDTO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ExerciciosService.cs" />
@@ -150,6 +151,12 @@
     </Compile>
     <Compile Include="View\TelaAdicionarTreino.Designer.cs">
       <DependentUpon>TelaAdicionarTreino.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\TelaFuncionarioTreinos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\TelaFuncionarioTreinos.Designer.cs">
+      <DependentUpon>TelaFuncionarioTreinos.cs</DependentUpon>
     </Compile>
     <Compile Include="View\TelaHistorico.cs">
       <SubType>Form</SubType>
@@ -205,6 +212,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\TelaAdicionarTreino.resx">
       <DependentUpon>TelaAdicionarTreino.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\TelaFuncionarioTreinos.resx">
+      <DependentUpon>TelaFuncionarioTreinos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\TelaHistorico.resx">
       <DependentUpon>TelaHistorico.cs</DependentUpon>
@@ -294,6 +304,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\historico24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconlistaTreinosss.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

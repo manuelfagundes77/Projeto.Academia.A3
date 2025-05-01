@@ -81,7 +81,8 @@ namespace Projeto.Academia.A3.View
                 Tipo = tipo,
                 Descricao = descricao,
                 Duracao = duracaoFormatada,
-                DataInicio = dataInicio
+                DataInicio = dataInicio,
+                 FuncionarioId = FuncionarioLogado.Funcionario?.FuncionarioId
             };
 
             // Criar um controlador do Treino

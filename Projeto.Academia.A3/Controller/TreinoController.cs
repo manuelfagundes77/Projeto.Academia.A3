@@ -44,5 +44,11 @@ namespace Projeto.Academia.A3.Controller
             // Aqui você chama o serviço para obter os treinos
             return treinoService.ObterTreinos(alunoId);
         }
+
+        //metodo para obter todos os treino do funcionario
+        public List<TreinoComAlunoDTO> ObterTreinosPorFuncionario(int funcionarioId)
+        {
+            return treinoService.ObterTreinosPorFuncionario(funcionarioId);
+        }
     }
 }
