@@ -69,7 +69,7 @@ namespace Projeto.Academia.A3.Services
         {
             List<SubTreino> subTreinos = new List<SubTreino>();
 
-            string query = "SELECT * FROM SubTreinos WHERE TreinoId = @TreinoId";
+            string query = "SELECT * FROM TreinoSub WHERE TreinoId = @TreinoId";
             using (MySqlConnection conexao = Conexao.ObterConexao())
             {
                 MySqlCommand cmd = new MySqlCommand(query, conexao);

@@ -38,7 +38,6 @@
             this.selecionarCargo = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.BtnVoltar = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
@@ -125,24 +124,13 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(234, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(283, 31);
+            this.label1.Size = new System.Drawing.Size(354, 39);
             this.label1.TabIndex = 10;
             this.label1.Text = "Cadastrar Funcionario";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // BtnVoltar
-            // 
-            this.BtnVoltar.BackgroundImage = global::Projeto.Academia.A3.Properties.Resources.back_arrow_14447;
-            this.BtnVoltar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnVoltar.Location = new System.Drawing.Point(12, 6);
-            this.BtnVoltar.Name = "BtnVoltar";
-            this.BtnVoltar.Size = new System.Drawing.Size(48, 48);
-            this.BtnVoltar.TabIndex = 11;
-            this.BtnVoltar.Click += new System.EventHandler(this.BtnVoltar_Click);
             // 
             // panel1
             // 
@@ -158,7 +146,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.BtnVoltar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
@@ -196,6 +183,5 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel BtnVoltar;
     }
 }

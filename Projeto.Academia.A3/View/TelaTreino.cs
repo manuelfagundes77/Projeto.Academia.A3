@@ -261,7 +261,40 @@ namespace Projeto.Academia.A3.View
             }
         }
 
+        private void listaExercicios_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            RemoverExercicioSelecionado(listaExercicios, listaDeExercicios);
+        }
 
+        private void listaExerciciosB_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            RemoverExercicioSelecionado(listaExerciciosB, listaDeExerciciosB);
+        }
+
+        private void listaExerciciosC_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            RemoverExercicioSelecionado(listaExerciciosC, listaDeExerciciosC);
+
+        }
+
+        private void RemoverExercicioSelecionado(ListBox listBox, List<Exercicio> lista)
+        {
+            if (listBox.SelectedItem is Exercicio exercicioSelecionado)
+            {
+                var resultado = MessageBox.Show(
+                    $"Deseja remover o exercício \"{exercicioSelecionado.NomeExercicio}\"?",
+                    "Confirmar Remoção",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Warning
+                );
+
+                if (resultado == DialogResult.Yes)
+                {
+                    listBox.Items.Remove(exercicioSelecionado);
+                    lista.Remove(exercicioSelecionado);
+                }
+            }
+        }
 
     }
 }

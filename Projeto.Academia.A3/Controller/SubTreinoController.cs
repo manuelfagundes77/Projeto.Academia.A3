@@ -27,6 +27,11 @@ namespace Projeto.Academia.A3.Controller
         {
             return _service.AdicionarListaSubTreinos(listaSubTreinos, treinoId); // Retorna se todos os subtreinos foram adicionados com sucesso
         }
+
+        public List<SubTreino> ObterSubTreinosComExercicios(int treinoId)
+        {
+            return _service.ObterSubTreinosComExercicios(treinoId);
+        }
     }
 
 }

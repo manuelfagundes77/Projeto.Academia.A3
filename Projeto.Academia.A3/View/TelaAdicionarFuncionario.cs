@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Projeto.Academia.A3.Controller;
+using Projeto.Academia.A3.Models;
 
 namespace Projeto.Academia.A3.View
 {
@@ -74,7 +75,13 @@ namespace Projeto.Academia.A3.View
 
         private void TelaAdicionarFuncionario_Load(object sender, EventArgs e)
         {
-
+            if (FuncionarioLogado.Funcionario?.Cargo != "Gerente")
+            {
+                button1.Enabled = false;
+                MessageBox.Show("Apenas gerentes podem adicionar funcionários.", "Acesso Negado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+                //  button1.Visible = false; 
+            }
         }
     }
 }

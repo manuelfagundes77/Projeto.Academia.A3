@@ -137,10 +137,10 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(237, 29);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(239, 31);
+            this.label6.Size = new System.Drawing.Size(299, 39);
             this.label6.TabIndex = 12;
             this.label6.Text = "Cadastrar Membro";
             // 

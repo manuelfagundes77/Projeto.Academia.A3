@@ -79,8 +79,8 @@ namespace Projeto.Academia.A3.Services
                     {
                         Exercicio exercicio = new Exercicio
                         {
-                            ExercicioId = reader.GetInt32("Id"),
-                            NomeExercicio = reader.GetString("NomeExercicio"),
+                            ExercicioId = reader.GetInt32("ExercicioId"),
+                            NomeExercicio = reader.GetString("Nome"),
                             Serie = reader.GetString("Serie"),
                             Repeticoes = reader.GetString("Repeticoes"),
                             SubTreinoId = reader.GetInt32("SubTreinoId")

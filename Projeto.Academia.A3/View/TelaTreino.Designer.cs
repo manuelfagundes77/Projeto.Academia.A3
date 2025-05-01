@@ -266,6 +266,7 @@
             this.listaExercicios.Name = "listaExercicios";
             this.listaExercicios.Size = new System.Drawing.Size(219, 95);
             this.listaExercicios.TabIndex = 18;
+            this.listaExercicios.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listaExercicios_MouseDoubleClick);
             // 
             // label7
             // 
@@ -323,6 +324,7 @@
             this.listaExerciciosB.Name = "listaExerciciosB";
             this.listaExerciciosB.Size = new System.Drawing.Size(220, 95);
             this.listaExerciciosB.TabIndex = 24;
+            this.listaExerciciosB.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listaExerciciosB_MouseDoubleClick);
             // 
             // listaExerciciosC
             // 
@@ -331,6 +333,7 @@
             this.listaExerciciosC.Name = "listaExerciciosC";
             this.listaExerciciosC.Size = new System.Drawing.Size(219, 95);
             this.listaExerciciosC.TabIndex = 25;
+            this.listaExerciciosC.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listaExerciciosC_MouseDoubleClick);
             // 
             // label11
             // 

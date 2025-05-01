@@ -16,11 +16,14 @@ namespace Projeto.Academia.A3.View
     {
         private Membro _membro;
         private TreinoController _treinoController;
+        private SubTreinoController _subTreinoController;
+
         public TelaHistorico(Membro membro)
         {
             InitializeComponent();
             _membro = membro;
             _treinoController = new TreinoController();
+            _subTreinoController = new SubTreinoController();
 
             // Ja mostra due passou a PESSOA CORRETA
             labelID.Text = _membro.Nome;
@@ -84,6 +87,45 @@ namespace Projeto.Academia.A3.View
         private void dataView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void CarregarExerciciosNosListBox(int treinoId)
+        {
+            listaExercicioA.Items.Clear();
+            listaExercicioB.Items.Clear();
+            listaExercicioC.Items.Clear();
+
+            var subTreinos = _subTreinoController.ObterSubTreinosComExercicios(treinoId);
+
+            foreach (var subTreino in subTreinos)
+            {
+                foreach (var exercicio in subTreino.Exercicios)
+                {
+                    string item = $"{exercicio.NomeExercicio} - {exercicio.Serie}x{exercicio.Repeticoes}";
+
+                    if (subTreino.Nome.StartsWith("A", StringComparison.OrdinalIgnoreCase))
+                    {
+                        listaExercicioA.Items.Add(item);
+                    }
+                    else if (subTreino.Nome.StartsWith("B", StringComparison.OrdinalIgnoreCase))
+                    {
+                        listaExercicioB.Items.Add(item);
+                    }
+                    else if (subTreino.Nome.StartsWith("C", StringComparison.OrdinalIgnoreCase))
+                    {
+                        listaExercicioC.Items.Add(item);
+                    }
+                }
+            }
+        }
+
+        private void dataView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                int treinoId = Convert.ToInt32(dataView.Rows[e.RowIndex].Cells["TreinoId"].Value);
+                CarregarExerciciosNosListBox(treinoId);
+            }
         }
     }
 }
