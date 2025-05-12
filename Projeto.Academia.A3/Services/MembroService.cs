@@ -1,17 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using Projeto.Academia.A3.Data;
 using Projeto.Academia.A3.Models;
-using System.Windows.Forms;
+
+
 
 namespace Projeto.Academia.A3.Services
 {
     public class MembroService
     {
+
+        
+
+        public MembroService()
+        {
+            
+        }
+
         //  adicionar um novo Membro
         public bool AdicionarMembro(Membro membro)
         {
@@ -44,8 +50,8 @@ namespace Projeto.Academia.A3.Services
                     int alunoId = Convert.ToInt32(idComando.ExecuteScalar()); // Recupera o ID gerado automaticamente
 
                     // Agora podemos chamar o serviço de pagamentos com o AlunoId
-                    var pagamentoService = new PagamentoService();
-                    pagamentoService.GerarPagamentosPendentes(alunoId);
+                  //  var pagamentoService = new PagamentoService(); // LIGAR DEPOIISSS
+                 //   pagamentoService.GerarPagamentosPendentes(alunoId); //LIGAR DEPOISS
 
                     return true; // Se o comando foi bem-sucedido, retorna true
                 }
@@ -56,8 +62,8 @@ namespace Projeto.Academia.A3.Services
             }
             catch (Exception ex)
             {
-                // Em caso de erro exibe a mensagem de erro cpf duplicado ex
-                MessageBox.Show("Erro ao adicionar membro: " + ex.Message);
+             
+                Console.WriteLine("Erro ao adicionar membro: " + ex.Message); // Log de erro sem usar a interface gráfica
                 return false;
             }
             finally
@@ -65,9 +71,10 @@ namespace Projeto.Academia.A3.Services
                 // Fecha a conexão após a operação
                 Conexao.FecharConexao(conexao);
             }
-
-            
         }
+
+       
+
 
         //  listar todos os membros
         public List<Membro> ListarMembros()
@@ -102,7 +109,8 @@ namespace Projeto.Academia.A3.Services
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao listar membros: " + ex.Message);
+                //MessageBox.Show("Erro ao listar membros: " + ex.Message);
+                Console.WriteLine("Erro ao listar membros: " + ex.Message);
                 return null;
             }
             finally
@@ -146,7 +154,8 @@ namespace Projeto.Academia.A3.Services
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao buscar membro: " + ex.Message);
+              //  MessageBox.Show("Erro ao buscar membro: " + ex.Message);
+                Console.WriteLine("Erro ao buscar membro: " + ex.Message);
             }
             finally
             {
@@ -248,7 +257,8 @@ namespace Projeto.Academia.A3.Services
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao excluir membro: " + ex.Message);
+               // MessageBox.Show("Erro ao excluir membro: " + ex.Message);
+                Console.WriteLine("Erro ao excluir membro: " + ex.Message);
                 return false;
             }
             finally
@@ -256,5 +266,13 @@ namespace Projeto.Academia.A3.Services
                 Conexao.FecharConexao(conexao);
             }
         }
+
+
+
+
+
+
+
+
     }
 }

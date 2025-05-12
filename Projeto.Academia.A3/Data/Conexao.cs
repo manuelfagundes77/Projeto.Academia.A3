@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
-using System.Windows.Forms;
-
 namespace Projeto.Academia.A3.Data
 {
    public class Conexao
@@ -36,7 +30,8 @@ namespace Projeto.Academia.A3.Data
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao conectar ao banco de dados: " + ex.Message);
+                Console.WriteLine("Erro ao conectar ao banco de dados: " + ex.Message);
+               // MessageBox.Show("Erro ao conectar ao banco de dados: " + ex.Message);
                 return null;
             }
         }

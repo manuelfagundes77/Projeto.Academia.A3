@@ -51,3 +51,6 @@ C:\Users\Manuel\Desktop\Projeto.Academia.A3\Projeto.Academia.A3\obj\Debug\Projet
 C:\Users\Manuel\Desktop\Projeto.Academia.A3\Projeto.Academia.A3\obj\Debug\Projeto.Academia.A3.View.TelaHistorico.resources
 C:\Users\Manuel\Desktop\Projeto.Academia.A3\Projeto.Academia.A3\obj\Debug\Projeto.Academia.A3.View.TelaTreino.resources
 C:\Users\Manuel\Desktop\Projeto.Academia.A3\Projeto.Academia.A3\obj\Debug\Projeto.Academia.A3.View.TelaFuncionarioTreinos.resources
+C:\Users\Manuel\Desktop\Projeto.Academia.A3\Projeto.Academia.A3\bin\Debug\Castle.Core.dll
+C:\Users\Manuel\Desktop\Projeto.Academia.A3\Projeto.Academia.A3\bin\Debug\Moq.dll
+C:\Users\Manuel\Desktop\Projeto.Academia.A3\Projeto.Academia.A3\bin\Debug\Castle.Core.xml

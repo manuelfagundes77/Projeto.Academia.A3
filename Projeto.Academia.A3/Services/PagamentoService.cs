@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 using MySql.Data.MySqlClient;
 using Projeto.Academia.A3.Data;
-using System.Windows.Forms;
+
 using Projeto.Academia.A3.Models;
 
 namespace Projeto.Academia.A3.Services
@@ -41,7 +39,7 @@ namespace Projeto.Academia.A3.Services
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao gerar pagamentos: " + ex.Message);
+               // MessageBox.Show("Erro ao gerar pagamentos: " + ex.Message);
                 return false;
             }
             finally
@@ -85,7 +83,7 @@ namespace Projeto.Academia.A3.Services
             catch (Exception ex)
             {
                 // Em caso de erro, exibe a mensagem de erro
-                MessageBox.Show("Erro ao alterar a situação do pagamento: " + ex.Message);
+               // MessageBox.Show("Erro ao alterar a situação do pagamento: " + ex.Message);
                 return false;
             }
             finally
@@ -141,7 +139,7 @@ namespace Projeto.Academia.A3.Services
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao listar pagamentos: " + ex.Message);
+              //  MessageBox.Show("Erro ao listar pagamentos: " + ex.Message);
                 return null;
             }
             finally

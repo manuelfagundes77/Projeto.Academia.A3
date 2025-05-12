@@ -108,52 +108,7 @@ namespace Projeto.Academia.A3.Services
             }
         }
 
-        //public List<Treino> ObterTreinosPorFuncionario(int funcionarioId)
-        //{
-        //    MySqlConnection conexao = Conexao.ObterConexao();
-        //    if (conexao == null)
-        //    {
-        //        return null;
-        //    }
-
-        //    List<Treino> treinos = new List<Treino>();
-        //    try
-        //    {
-        //        string query = "SELECT * FROM treinos WHERE FuncionarioId = @FuncionarioId ORDER BY TreinoId DESC";
-        //        MySqlCommand cmd = new MySqlCommand(query, conexao);
-        //        cmd.Parameters.AddWithValue("@FuncionarioId", funcionarioId);
-
-        //        MySqlDataReader reader = cmd.ExecuteReader();
-        //        while (reader.Read())
-        //        {
-        //            Treino treino = new Treino
-        //            {
-        //                TreinoId = reader.GetInt32("TreinoId"),
-        //                AlunoId = reader.GetInt32("AlunoId"),
-        //                Tipo = reader.GetString("Tipo"),
-        //                Descricao = reader.GetString("Descricao"),
-        //                Duracao = reader.GetString("Duracao"),
-        //                DataInicio = reader.GetDateTime("DataInicio"),
-        //                FuncionarioId = reader.IsDBNull(reader.GetOrdinal("FuncionarioId"))
-        //                        ? (int?)null
-        //                        : reader.GetInt32("FuncionarioId")
-        //            };
-
-        //            treinos.Add(treino);
-        //        }
-
-        //        return treinos;
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        Console.WriteLine($"Erro ao obter treinos do funcionário: {ex.Message}");
-        //        return null;
-        //    }
-        //    finally
-        //    {
-        //        Conexao.FecharConexao(conexao);
-        //    }
-        //}
+     
 
 
         public List<TreinoComAlunoDTO> ObterTreinosPorFuncionario(int funcionarioId)

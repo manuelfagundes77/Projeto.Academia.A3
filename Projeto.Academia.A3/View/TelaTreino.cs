@@ -56,7 +56,7 @@ namespace Projeto.Academia.A3.View
                 MessageBox.Show("Adicione pelo menos um exercício a cada subtreino.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
-
+            //
             return true;
         }
 
