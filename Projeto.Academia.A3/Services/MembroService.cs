@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using MySql.Data.MySqlClient;
 using Projeto.Academia.A3.Data;
+using Projeto.Academia.A3.inteface;
 using Projeto.Academia.A3.Models;
 
 
@@ -13,10 +14,19 @@ namespace Projeto.Academia.A3.Services
 
         
 
+       
         public MembroService()
         {
             
         }
+
+        private readonly IConexao _conexao;
+
+        public MembroService(IConexao conexao)
+        {
+            _conexao = conexao;
+        }
+
 
         //  adicionar um novo Membro
         public bool AdicionarMembro(Membro membro)

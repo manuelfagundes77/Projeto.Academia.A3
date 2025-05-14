@@ -21,7 +21,7 @@ namespace Projeto.Academia.A3.Tests
             {
                 AlunoId = 8,  // ID do aluno
                 Tipo = "Musculação",
-                Descricao = "Teste SUBTREINO",
+                Descricao = "Teste 5SUBTREINO",
                 Duracao = "2025",  
                 DataInicio = dataInicio,  // Data de início do treino com a data e hora atual
                 FuncionarioId = 1 // ID do funcionario 
@@ -49,11 +49,49 @@ namespace Projeto.Academia.A3.Tests
             Assert.NotEqual(-1, subTreinoId);  // O ID retornado deve ser diferente de -1 se o subtreino foi adicionado com sucesso
         }
 
+        [Fact]
+        public void ObterTreinos_DeveRetornarTreinosDoAlunoId8()
+        {
+            // Arrange
+            var alunoId = 8; // ID do aluno
 
+            var _treinoService = new TreinoService();
+
+            // Act - Obter os treinos do aluno com ID 8
+            var treinosObtidos = _treinoService.ObterTreinos(alunoId);
+
+            // Assert - Verifica se a lista de treinos nao e nula e se contem treinos
+            Assert.NotNull(treinosObtidos);  // A lista nao pode ser nula
+            Assert.True(treinosObtidos.Count > 0, "A lista de treinos não deve estar vazia");  // A lista deve ter ao menos um treino
+        }
+
+        [Fact]
+        public void ObterTreinosPorFuncionario_DeveRetornarTreinosDoFuncionarioId1()
+        {
+            // Arrange
+            var funcionarioId = 1; // ID do funcionário que estamos buscando os treinos
+
+            var _treinoService = new TreinoService();
+
+            // Act - Obter os treinos do funcionário com ID 1
+            var treinosObtidos = _treinoService.ObterTreinosPorFuncionario(funcionarioId);
+
+            // Assert - Verifica se a lista de treinos não é nula e se contém treinos
+            Assert.NotNull(treinosObtidos);  // A lista não pode ser nula
+            Assert.True(treinosObtidos.Count > 0, "A lista de treinos não deve estar vazia");  // A lista deve ter ao menos um treino
+        }
 
 
 
 
 
     }
+
+
+
+
+
+
+
+
 }

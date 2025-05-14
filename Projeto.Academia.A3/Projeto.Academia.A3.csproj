@@ -111,6 +111,11 @@
     <Compile Include="Controller\SubTreinoController.cs" />
     <Compile Include="Controller\TreinoController.cs" />
     <Compile Include="Data\Conexao.cs" />
+    <Compile Include="inteface\ConexaoReal.cs" />
+    <Compile Include="inteface\FakeMySqlDataReader.cs" />
+    <Compile Include="inteface\IConexao.cs" />
+    <Compile Include="inteface\IMembroService.cs" />
+    <Compile Include="inteface\MembroServiceFake.cs" />
     <Compile Include="Models\Exercicio.cs" />
     <Compile Include="Models\FuncionarioLogado.cs" />
     <Compile Include="Models\Funcionarios.cs" />

@@ -5,6 +5,8 @@ using Xunit;
 using MySql.Data.MySqlClient;
 
 using Projeto.Academia.A3.Data;
+using Projeto.Academia.A3.inteface;
+using System.Data;
 
 namespace Projeto.Academia.A3.Tests
 {
@@ -143,6 +145,85 @@ namespace Projeto.Academia.A3.Tests
             Assert.Equal(telefoneAlterado, membroBuscado.Telefone);
             Console.WriteLine($"Membro encontrado: {membroBuscado.Nome}, Novo telefone: {membroBuscado.Telefone}");
         }
+
+        [Fact]
+        public void ListarMembros_DeveRetornarMembros()
+        {
+            // Act
+            var membros = new MembroService().ListarMembros();
+
+            // Assert
+            Assert.NotNull(membros);  // Verifica se não retornou nulo
+            Assert.True(membros.Count > 0);  // Verifica se retornou algum membro
+            Assert.All(membros, membro =>
+            {
+                Assert.NotNull(membro.Nome);  // Verifica se o nome do membro não é nulo
+                Assert.NotNull(membro.CPF);   // Verifica se o CPF do membro não é nulo
+                Assert.NotNull(membro.Telefone); // Verifica se o telefone do membro não é nulo
+                Assert.NotNull(membro.Endereco); // Verifica se o endereço do membro não é nulo
+            });
+        }
+
+
+        [Fact]
+        public void ListarMembros_DeveRetornarFakeUNITARIO()
+        {
+            // Arrange
+            IMembroService service = new MembroServiceFake();
+
+            // Act
+            var membros = service.ListarMembros();
+
+            // Assert
+            Assert.NotNull(membros);
+            Assert.Single(membros);
+            Assert.Equal("Manuel", membros[0].Nome);
+        }
+
+        [Fact]
+        public void BuscarMembroPorCPF_QuandoExistirMembro_RetornarMembroUNITARIO()
+        {
+            // Arrange
+            var fakeData = new List<Dictionary<string, object>>
+        {
+            new Dictionary<string, object>
+            {
+                { "AlunoId", 1 },
+                { "Nome", "João Silva" },
+                { "CPF", "12345678900" },
+                { "Telefone", "123456789" },
+                { "Endereco", "Rua Exemplo, 123" },
+                { "DataCadastro", DateTime.Now }
+            }
+        };
+
+            // Cria o fake reader com os dados simulados
+            var fakeReader = new FakeMySqlDataReader(fakeData);
+
+            // Aqui, vamos testar o método modificado para usar o fake
+            var service = new FakeMySqlDataReader(fakeData);
+
+            // Act
+            var membro = service.BuscarMembroPorCPFComFake("12345678900", fakeReader);
+
+            // Assert
+            Assert.NotNull(membro);
+            Assert.Equal(1, membro.AlunoId);
+            Assert.Equal("João Silva", membro.Nome);
+            Assert.Equal("12345678900", membro.CPF);
+            Assert.Equal("123456789", membro.Telefone);
+            Assert.Equal("Rua Exemplo, 123", membro.Endereco);
+        }
+
+
+
+
+
+
+
+
+
+
 
 
 
