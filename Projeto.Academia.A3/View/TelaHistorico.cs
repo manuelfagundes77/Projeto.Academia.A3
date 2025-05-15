@@ -95,7 +95,7 @@ namespace Projeto.Academia.A3.View
             listaExercicioB.Items.Clear();
             listaExercicioC.Items.Clear();
 
-            var subTreinos = _subTreinoController.ObterSubTreinosComExercicios(treinoId);
+            var subTreinos = _subTreinoController.ObterSubTreinosComExercicios(treinoId);//volta do BANCO todos os SUBtreinos  pelo ID do treino com seus respectivos exercicios
 
             foreach (var subTreino in subTreinos)
             {

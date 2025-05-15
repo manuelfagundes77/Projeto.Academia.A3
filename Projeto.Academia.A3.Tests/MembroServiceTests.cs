@@ -217,11 +217,80 @@ namespace Projeto.Academia.A3.Tests
 
 
 
+        [Fact]
+        public void AdicionarMembro_DeveRetornarTrue_QuandoInsercaoForBemSucedidaUnitario()
+        {
+            // Arrange
+            var conexaoFake = new ConexaoFake();
+            var comandoInsercaoFake = new FakeMySqlCommand(true); // simula inserção com sucesso
+            var comandoIdFake = new FakeMySqlCommand(true);
+
+            var service = new MembroServiceFakeComAdicao(conexaoFake, comandoInsercaoFake, comandoIdFake);
+
+            var novoMembro = new Membro
+            {
+                Nome = "Carlos Silva",
+                CPF = "12312312312",
+                Telefone = "11999998888",
+                Endereco = "Rua da Praia, 100"
+            };
+
+            // Act
+            bool resultado = service.AdicionarMembro(novoMembro);
+
+            // Assert
+            Assert.True(resultado);
+        }
 
 
+        [Fact]
+        public void EditarMembro_DeveRetornarTrue_QuandoAlteracaoForDetectadaUNITARIO()
+        {
+            var conexaoFake = new ConexaoFake();
 
+            var dadosFake = new List<Dictionary<string, object>>
+        {
+            new Dictionary<string, object>
+            {
+                {"Nome", "Carlos Silva"},
+                {"CPF", "12312312312"},
+                {"Telefone", "11999998888"},
+                {"Endereco", "Rua da Praia, 100"}
+            }
+        };
+            var readerFake = new FakeMySqlDataReader(dadosFake);
 
+            var comandoUpdateFake = new FakeMySqlCommand(true); // simula update bem sucedido
 
+            var service = new MembroServiceFakeComEdicao(conexaoFake, readerFake, comandoUpdateFake);
+
+            var membroEditado = new Membro
+            {
+                Nome = "Carlos Silva Editado",
+                CPF = "12312312312",
+                Telefone = "11999998888",
+                Endereco = "Rua da Praia, 100"
+            };
+
+            bool resultado = service.EditarMembro(membroEditado);
+
+            Assert.True(resultado);
+        }
+
+        [Fact]
+        public void ExcluirMembro_DeveRetornarTrue_QuandoExclusaoForBemSucedidaUnitario()
+        {
+            var conexaoFake = new ConexaoFake();
+            var comandoDeleteFake = new FakeMySqlCommand(true); // true simula exclusão bem-sucedida
+
+            var service = new MembroServiceFakeComExclusao(conexaoFake, comandoDeleteFake);
+
+            int alunoIdParaExcluir = 42;
+
+            bool resultado = service.ExcluirMembro(alunoIdParaExcluir);
+
+            Assert.True(resultado);
+        }
 
 
 

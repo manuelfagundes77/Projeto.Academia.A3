@@ -30,9 +30,9 @@
         {
             this.panelPrincipal = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.labelLogado = new System.Windows.Forms.Label();
             this.buscarTreinoFunc = new System.Windows.Forms.Button();
             this.panelLuzVerde = new System.Windows.Forms.Panel();
+            this.labelLogado = new System.Windows.Forms.Label();
             this.pagamentos = new System.Windows.Forms.Button();
             this.adicionarTreino = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -69,15 +69,6 @@
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // labelLogado
-            // 
-            this.labelLogado.AutoSize = true;
-            this.labelLogado.Location = new System.Drawing.Point(3, 428);
-            this.labelLogado.Name = "labelLogado";
-            this.labelLogado.Size = new System.Drawing.Size(35, 13);
-            this.labelLogado.TabIndex = 8;
-            this.labelLogado.Text = "label2";
-            // 
             // buscarTreinoFunc
             // 
             this.buscarTreinoFunc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
@@ -108,6 +99,16 @@
             this.panelLuzVerde.Size = new System.Drawing.Size(21, 19);
             this.panelLuzVerde.TabIndex = 9;
             this.panelLuzVerde.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLuzVerde_Paint);
+            // 
+            // labelLogado
+            // 
+            this.labelLogado.AutoSize = true;
+            this.labelLogado.Location = new System.Drawing.Point(3, 428);
+            this.labelLogado.Name = "labelLogado";
+            this.labelLogado.Size = new System.Drawing.Size(35, 13);
+            this.labelLogado.TabIndex = 8;
+            this.labelLogado.Text = "label2";
+            this.labelLogado.Click += new System.EventHandler(this.labelLogado_Click);
             // 
             // pagamentos
             // 

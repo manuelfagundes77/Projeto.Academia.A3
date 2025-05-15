@@ -27,10 +27,13 @@ namespace Projeto.Academia.A3.View
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //recupera os dados do campos digitados
             string nome = campoNome.Text;
             string cargo = selecionarCargo.SelectedItem?.ToString();
             string login = campoLogin.Text;
             string senha = campoSenha.Text;
+
+            //verifica se os campos estão vazios
 
             if (string.IsNullOrWhiteSpace(nome) || cargo == "Selecione" || string.IsNullOrWhiteSpace(login) || string.IsNullOrWhiteSpace(senha))
             {
@@ -39,7 +42,7 @@ namespace Projeto.Academia.A3.View
             }
 
             try
-            {
+            {   
                 bool sucesso = funcionarioController.AdicionarFuncionario(nome, cargo, login, senha);
                 if (sucesso)
                 {
@@ -73,6 +76,7 @@ namespace Projeto.Academia.A3.View
             Application.Exit();
         }
 
+        //habilida ou desabilita botão para adicinar novo funcionario 
         private void TelaAdicionarFuncionario_Load(object sender, EventArgs e)
         {
             if (FuncionarioLogado.Funcionario?.Cargo != "Gerente")

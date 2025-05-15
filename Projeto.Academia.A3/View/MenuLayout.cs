@@ -25,7 +25,7 @@ namespace Projeto.Academia.A3.View
 
         private void verificarLogado()
         {
-            // Verifica se o funcionário está logado e altera o texto do labelLogado
+            // Verifica se o funcionário esta logado e altera o texto do labelLogado
             if (FuncionarioLogado.Funcionario != null)
             {
                 // Exibe o nome do funcionário logado no label
@@ -112,6 +112,11 @@ namespace Projeto.Academia.A3.View
         private void buscarTreinoFunc_Click(object sender, EventArgs e)
         {
             AbrirFormNoPainel(new TelaFuncionarioTreinos());
+        }
+
+        private void labelLogado_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

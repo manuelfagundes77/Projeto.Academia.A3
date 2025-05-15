@@ -50,7 +50,7 @@ namespace Projeto.Academia.A3.View
                 return; // para o codigo aqui se faltar algo
             }
 
-            // Verifica se o CPF ou Telefone contém apenas numeros
+            // Verifica se o CPF ou Telefone contem apenas numeros
             if (!Uteis.ValidarSomenteNumeros(cpf, "CPF") || !Uteis.ValidarSomenteNumeros(telefone, "Telefone"))
             {
                 return;

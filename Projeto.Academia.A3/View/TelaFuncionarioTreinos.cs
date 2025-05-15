@@ -39,7 +39,7 @@ namespace Projeto.Academia.A3.View
             if (comboBoxFuncionarios.SelectedIndex != -1)
             {
                 int funcionarioId = Convert.ToInt32(comboBoxFuncionarios.SelectedValue);
-                CarregarTreinosDoFuncionario(funcionarioId);
+                CarregarTreinosDoFuncionario(funcionarioId);//chama o metodo que carrega  todos os treinos do funcionario selecionado
             }
         }
 
@@ -48,17 +48,17 @@ namespace Projeto.Academia.A3.View
         {
 
             TreinoController controller = new TreinoController();
-            var treinos = controller.ObterTreinosPorFuncionario(funcionarioId);
+            var treinos = controller.ObterTreinosPorFuncionario(funcionarioId);//funcao que recupera do Banco todos os treinso por ID
 
             if (treinos != null && treinos.Any())
             {
                 // Defina o DataSource primeiro
                 tabelaTreinos.DataSource = null;
-                tabelaTreinos.DataSource = treinos;
+                tabelaTreinos.DataSource = treinos; //preenche a tabela
 
                 // Ocultar as colunas desnecessárias (se necessário)
                 //    tabelaTreinos.Columns["FuncionarioId"].Visible = false;
-                OrganizarTabela();
+                OrganizarTabela(); 
             }
             else
             {
