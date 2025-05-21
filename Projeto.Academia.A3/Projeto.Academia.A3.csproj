@@ -319,6 +319,11 @@
   <ItemGroup>
     <None Include="Resources\iconlistaTreinosss.ico" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\ChatGPT_Image_20_de_mai._de_2025_10_16_37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT_Image_20_de_mai._de_2025_10_16_371.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

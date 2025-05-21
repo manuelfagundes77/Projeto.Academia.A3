@@ -22,7 +22,7 @@ namespace Projeto.Academia.A3.View
         {
             InitializeComponent();
             membroController = new MembroController();
-            this.FormClosing += new FormClosingEventHandler(this.Formulario_FormClosing);
+            this.FormClosing += new FormClosingEventHandler(this.Formulario_FormClosing);//fechar
         }
 
 
@@ -56,7 +56,7 @@ namespace Projeto.Academia.A3.View
                 return;
             }
 
-
+            
             Membro novoMembro = new Membro
             {
                 Nome = nome,

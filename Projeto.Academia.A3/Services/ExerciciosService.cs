@@ -62,6 +62,7 @@ namespace Projeto.Academia.A3.Services
             return sucesso;
         }
 
+        //RETORNA
         public List<Exercicio> ObterExerciciosPorSubTreinoId(int subTreinoId)
         {
             List<Exercicio> exercicios = new List<Exercicio>();

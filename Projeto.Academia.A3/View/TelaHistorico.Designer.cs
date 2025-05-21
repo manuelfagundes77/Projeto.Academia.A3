@@ -48,7 +48,7 @@
             // 
             this.labelID.AutoSize = true;
             this.labelID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelID.Location = new System.Drawing.Point(101, 103);
+            this.labelID.Location = new System.Drawing.Point(24, 132);
             this.labelID.Name = "labelID";
             this.labelID.Size = new System.Drawing.Size(51, 20);
             this.labelID.TabIndex = 1;
@@ -118,7 +118,7 @@
             // listaExercicioC
             // 
             this.listaExercicioC.FormattingEnabled = true;
-            this.listaExercicioC.Location = new System.Drawing.Point(543, 311);
+            this.listaExercicioC.Location = new System.Drawing.Point(534, 311);
             this.listaExercicioC.Name = "listaExercicioC";
             this.listaExercicioC.Size = new System.Drawing.Size(219, 95);
             this.listaExercicioC.TabIndex = 9;
@@ -144,7 +144,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(627, 285);
+            this.label4.Location = new System.Drawing.Point(619, 285);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(47, 13);
             this.label4.TabIndex = 12;

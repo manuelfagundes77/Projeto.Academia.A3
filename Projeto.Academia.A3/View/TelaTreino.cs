@@ -94,7 +94,8 @@ namespace Projeto.Academia.A3.View
             int treinoId = treinoController.AdicionarTreino(novoTreino);
 
             if (treinoId > 0)
-            {
+            {   
+                //criado na view 
                 AdicionarSubtreinosComExercicios(treinoId);
 
                 MessageBox.Show("Treino e subtreinos com exercícios adicionados com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);

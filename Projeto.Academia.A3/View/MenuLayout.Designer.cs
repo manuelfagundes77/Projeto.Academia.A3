@@ -94,10 +94,12 @@
             // 
             this.panelLuzVerde.BackgroundImage = global::Projeto.Academia.A3.Properties.Resources.iconluzVerde;
             this.panelLuzVerde.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panelLuzVerde.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panelLuzVerde.Location = new System.Drawing.Point(117, 428);
             this.panelLuzVerde.Name = "panelLuzVerde";
             this.panelLuzVerde.Size = new System.Drawing.Size(21, 19);
             this.panelLuzVerde.TabIndex = 9;
+            this.panelLuzVerde.Click += new System.EventHandler(this.panelLuzVerde_Click);
             this.panelLuzVerde.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLuzVerde_Paint);
             // 
             // labelLogado

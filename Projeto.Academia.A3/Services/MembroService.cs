@@ -28,7 +28,7 @@ namespace Projeto.Academia.A3.Services
         }
 
 
-        //  adicionar um novo Membro
+        //  adicionar um novo Membro SALVA
         public bool AdicionarMembro(Membro membro)
         {
             // Criar a conexão com o banco de dados
@@ -131,7 +131,7 @@ namespace Projeto.Academia.A3.Services
             return membros;
         }
 
-        //buscar por CPF
+        //buscar por CPF, volta do banco 
         public Membro BuscarMembroPorCPF(string cpf)
         {
             Membro membro = null;
@@ -187,7 +187,7 @@ namespace Projeto.Academia.A3.Services
             try
             {
                 // Buscar os dados atuais do membro no banco de dados
-                string queryBuscar = "SELECT * FROM Membros WHERE AlunoId = @AlunoId";
+                string queryBuscar = "SELECT * FROM Membros WHERE AlunoId = @AlunoId"; //Seleciona pelo ID
                 MySqlCommand comandoBuscar = new MySqlCommand(queryBuscar, conexao);
                 comandoBuscar.Parameters.AddWithValue("@AlunoId", membro.AlunoId);
                 MySqlDataReader reader = comandoBuscar.ExecuteReader();

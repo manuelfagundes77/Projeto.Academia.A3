@@ -13,7 +13,7 @@ namespace Projeto.Academia.A3.Models
         public int? FuncionarioId { get; set; } // FK (chave estrangeira)
         public string Tipo { get; set; }
         public string Descricao { get; set; }
-        public string Duracao { get; set; } // em minutos, por exemplo
+        public string Duracao { get; set; } 
         public DateTime DataInicio { get; set; }
     }
 }

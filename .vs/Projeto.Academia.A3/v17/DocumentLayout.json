@@ -3,56 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{82763687-4436-41B2-8406-3A4EB74BDFF3}|Projeto.Academia.A3.Tests\\Projeto.Academia.A3.Tests.csproj|c:\\users\\manuel\\desktop\\projeto.academia.a3\\projeto.academia.a3.tests\\subtreinoseriveunitariostests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{82763687-4436-41B2-8406-3A4EB74BDFF3}|Projeto.Academia.A3.Tests\\Projeto.Academia.A3.Tests.csproj|solutionrelative:projeto.academia.a3.tests\\subtreinoseriveunitariostests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0DDBC106-F9D1-466A-AF78-1358CB16593D}|Projeto.Academia.A3\\Projeto.Academia.A3.csproj|c:\\users\\manuel\\desktop\\projeto.academia.a3\\projeto.academia.a3\\view\\menulayout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DDBC106-F9D1-466A-AF78-1358CB16593D}|Projeto.Academia.A3\\Projeto.Academia.A3.csproj|solutionrelative:projeto.academia.a3\\view\\menulayout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{82763687-4436-41B2-8406-3A4EB74BDFF3}|Projeto.Academia.A3.Tests\\Projeto.Academia.A3.Tests.csproj|c:\\users\\manuel\\desktop\\projeto.academia.a3\\projeto.academia.a3.tests\\fakesubtreinos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{82763687-4436-41B2-8406-3A4EB74BDFF3}|Projeto.Academia.A3.Tests\\Projeto.Academia.A3.Tests.csproj|solutionrelative:projeto.academia.a3.tests\\fakesubtreinos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0DDBC106-F9D1-466A-AF78-1358CB16593D}|Projeto.Academia.A3\\Projeto.Academia.A3.csproj|c:\\users\\manuel\\desktop\\projeto.academia.a3\\projeto.academia.a3\\view\\menulayout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0DDBC106-F9D1-466A-AF78-1358CB16593D}|Projeto.Academia.A3\\Projeto.Academia.A3.csproj|solutionrelative:projeto.academia.a3\\view\\menulayout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DDBC106-F9D1-466A-AF78-1358CB16593D}|Projeto.Academia.A3\\Projeto.Academia.A3.csproj|c:\\users\\manuel\\desktop\\projeto.academia.a3\\projeto.academia.a3\\view\\telaadicionartreino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DDBC106-F9D1-466A-AF78-1358CB16593D}|Projeto.Academia.A3\\Projeto.Academia.A3.csproj|solutionrelative:projeto.academia.a3\\view\\telaadicionartreino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DDBC106-F9D1-466A-AF78-1358CB16593D}|Projeto.Academia.A3\\Projeto.Academia.A3.csproj|c:\\users\\manuel\\desktop\\projeto.academia.a3\\projeto.academia.a3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DDBC106-F9D1-466A-AF78-1358CB16593D}|Projeto.Academia.A3\\Projeto.Academia.A3.csproj|solutionrelative:projeto.academia.a3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{82763687-4436-41B2-8406-3A4EB74BDFF3}|Projeto.Academia.A3.Tests\\Projeto.Academia.A3.Tests.csproj|c:\\users\\manuel\\desktop\\projeto.academia.a3\\projeto.academia.a3.tests\\fakefuncionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{82763687-4436-41B2-8406-3A4EB74BDFF3}|Projeto.Academia.A3.Tests\\Projeto.Academia.A3.Tests.csproj|solutionrelative:projeto.academia.a3.tests\\fakefuncionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DDBC106-F9D1-466A-AF78-1358CB16593D}|Projeto.Academia.A3\\Projeto.Academia.A3.csproj|c:\\users\\manuel\\desktop\\projeto.academia.a3\\projeto.academia.a3\\services\\subtreinoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DDBC106-F9D1-466A-AF78-1358CB16593D}|Projeto.Academia.A3\\Projeto.Academia.A3.csproj|solutionrelative:projeto.academia.a3\\services\\subtreinoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{82763687-4436-41B2-8406-3A4EB74BDFF3}|Projeto.Academia.A3.Tests\\Projeto.Academia.A3.Tests.csproj|c:\\users\\manuel\\desktop\\projeto.academia.a3\\projeto.academia.a3.tests\\treinoserviceunitariotest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{82763687-4436-41B2-8406-3A4EB74BDFF3}|Projeto.Academia.A3.Tests\\Projeto.Academia.A3.Tests.csproj|solutionrelative:projeto.academia.a3.tests\\treinoserviceunitariotest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{82763687-4436-41B2-8406-3A4EB74BDFF3}|Projeto.Academia.A3.Tests\\Projeto.Academia.A3.Tests.csproj|c:\\users\\manuel\\desktop\\projeto.academia.a3\\projeto.academia.a3.tests\\faketreino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{82763687-4436-41B2-8406-3A4EB74BDFF3}|Projeto.Academia.A3.Tests\\Projeto.Academia.A3.Tests.csproj|solutionrelative:projeto.academia.a3.tests\\faketreino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DDBC106-F9D1-466A-AF78-1358CB16593D}|Projeto.Academia.A3\\Projeto.Academia.A3.csproj|c:\\users\\manuel\\desktop\\projeto.academia.a3\\projeto.academia.a3\\models\\treinocomalunodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DDBC106-F9D1-466A-AF78-1358CB16593D}|Projeto.Academia.A3\\Projeto.Academia.A3.csproj|solutionrelative:projeto.academia.a3\\models\\treinocomalunodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DDBC106-F9D1-466A-AF78-1358CB16593D}|Projeto.Academia.A3\\Projeto.Academia.A3.csproj|c:\\users\\manuel\\desktop\\projeto.academia.a3\\projeto.academia.a3\\models\\treino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DDBC106-F9D1-466A-AF78-1358CB16593D}|Projeto.Academia.A3\\Projeto.Academia.A3.csproj|solutionrelative:projeto.academia.a3\\models\\treino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DDBC106-F9D1-466A-AF78-1358CB16593D}|Projeto.Academia.A3\\Projeto.Academia.A3.csproj|c:\\users\\manuel\\desktop\\projeto.academia.a3\\projeto.academia.a3\\services\\treinoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DDBC106-F9D1-466A-AF78-1358CB16593D}|Projeto.Academia.A3\\Projeto.Academia.A3.csproj|solutionrelative:projeto.academia.a3\\services\\treinoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{82763687-4436-41B2-8406-3A4EB74BDFF3}|Projeto.Academia.A3.Tests\\Projeto.Academia.A3.Tests.csproj|c:\\users\\manuel\\desktop\\projeto.academia.a3\\projeto.academia.a3.tests\\fakepagamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{82763687-4436-41B2-8406-3A4EB74BDFF3}|Projeto.Academia.A3.Tests\\Projeto.Academia.A3.Tests.csproj|solutionrelative:projeto.academia.a3.tests\\fakepagamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{82763687-4436-41B2-8406-3A4EB74BDFF3}|Projeto.Academia.A3.Tests\\Projeto.Academia.A3.Tests.csproj|c:\\users\\manuel\\desktop\\projeto.academia.a3\\projeto.academia.a3.tests\\pagamentoserviceunitariotests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{82763687-4436-41B2-8406-3A4EB74BDFF3}|Projeto.Academia.A3.Tests\\Projeto.Academia.A3.Tests.csproj|solutionrelative:projeto.academia.a3.tests\\pagamentoserviceunitariotests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DDBC106-F9D1-466A-AF78-1358CB16593D}|Projeto.Academia.A3\\Projeto.Academia.A3.csproj|c:\\users\\manuel\\desktop\\projeto.academia.a3\\projeto.academia.a3\\services\\pagamentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DDBC106-F9D1-466A-AF78-1358CB16593D}|Projeto.Academia.A3\\Projeto.Academia.A3.csproj|solutionrelative:projeto.academia.a3\\services\\pagamentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DDBC106-F9D1-466A-AF78-1358CB16593D}|Projeto.Academia.A3\\Projeto.Academia.A3.csproj|c:\\users\\manuel\\desktop\\projeto.academia.a3\\projeto.academia.a3\\services\\membroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DDBC106-F9D1-466A-AF78-1358CB16593D}|Projeto.Academia.A3\\Projeto.Academia.A3.csproj|solutionrelative:projeto.academia.a3\\services\\membroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,179 +30,78 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SubTreinoSeriveUnitariosTests.cs",
-              "DocumentMoniker": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3.Tests\\SubTreinoSeriveUnitariosTests.cs",
-              "RelativeDocumentMoniker": "Projeto.Academia.A3.Tests\\SubTreinoSeriveUnitariosTests.cs",
-              "ToolTip": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3.Tests\\SubTreinoSeriveUnitariosTests.cs",
-              "RelativeToolTip": "Projeto.Academia.A3.Tests\\SubTreinoSeriveUnitariosTests.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAwwD4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T21:26:24.224Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FakeSubTreinos.cs",
-              "DocumentMoniker": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3.Tests\\FakeSubTreinos.cs",
-              "RelativeDocumentMoniker": "Projeto.Academia.A3.Tests\\FakeSubTreinos.cs",
-              "ToolTip": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3.Tests\\FakeSubTreinos.cs",
-              "RelativeToolTip": "Projeto.Academia.A3.Tests\\FakeSubTreinos.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAqwFcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T21:25:23.149Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "SubTreinoService.cs",
-              "DocumentMoniker": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3\\Services\\SubTreinoService.cs",
-              "RelativeDocumentMoniker": "Projeto.Academia.A3\\Services\\SubTreinoService.cs",
-              "ToolTip": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3\\Services\\SubTreinoService.cs",
-              "RelativeToolTip": "Projeto.Academia.A3\\Services\\SubTreinoService.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAiwG4AAAAAAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3\\Program.cs",
+              "RelativeDocumentMoniker": "Projeto.Academia.A3\\Program.cs",
+              "ToolTip": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3\\Program.cs",
+              "RelativeToolTip": "Projeto.Academia.A3\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T21:23:37.507Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TreinoServiceUnitarioTest.cs",
-              "DocumentMoniker": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3.Tests\\TreinoServiceUnitarioTest.cs",
-              "RelativeDocumentMoniker": "Projeto.Academia.A3.Tests\\TreinoServiceUnitarioTest.cs",
-              "ToolTip": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3.Tests\\TreinoServiceUnitarioTest.cs",
-              "RelativeToolTip": "Projeto.Academia.A3.Tests\\TreinoServiceUnitarioTest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T21:16:33.475Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Treino.cs",
-              "DocumentMoniker": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3\\Models\\Treino.cs",
-              "RelativeDocumentMoniker": "Projeto.Academia.A3\\Models\\Treino.cs",
-              "ToolTip": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3\\Models\\Treino.cs",
-              "RelativeToolTip": "Projeto.Academia.A3\\Models\\Treino.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T21:12:52.939Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TreinoComAlunoDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3\\Models\\TreinoComAlunoDTO.cs",
-              "RelativeDocumentMoniker": "Projeto.Academia.A3\\Models\\TreinoComAlunoDTO.cs",
-              "ToolTip": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3\\Models\\TreinoComAlunoDTO.cs",
-              "RelativeToolTip": "Projeto.Academia.A3\\Models\\TreinoComAlunoDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T21:12:19.84Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FakeTreino.cs",
-              "DocumentMoniker": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3.Tests\\FakeTreino.cs",
-              "RelativeDocumentMoniker": "Projeto.Academia.A3.Tests\\FakeTreino.cs",
-              "ToolTip": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3.Tests\\FakeTreino.cs",
-              "RelativeToolTip": "Projeto.Academia.A3.Tests\\FakeTreino.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAcwHUAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T21:09:56.548Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TreinoService.cs",
-              "DocumentMoniker": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3\\Services\\TreinoService.cs",
-              "RelativeDocumentMoniker": "Projeto.Academia.A3\\Services\\TreinoService.cs",
-              "ToolTip": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3\\Services\\TreinoService.cs",
-              "RelativeToolTip": "Projeto.Academia.A3\\Services\\TreinoService.cs",
-              "ViewState": "AgIAAI4AAAAAAAAAAAAUwLYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T21:08:50.884Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "pagamentoServiceUnitarioTests.cs",
-              "DocumentMoniker": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3.Tests\\pagamentoServiceUnitarioTests.cs",
-              "RelativeDocumentMoniker": "Projeto.Academia.A3.Tests\\pagamentoServiceUnitarioTests.cs",
-              "ToolTip": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3.Tests\\pagamentoServiceUnitarioTests.cs",
-              "RelativeToolTip": "Projeto.Academia.A3.Tests\\pagamentoServiceUnitarioTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T21:05:06.369Z",
+              "WhenOpened": "2025-05-21T14:54:49.957Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "TelaAdicionarTreino.cs",
+              "DocumentMoniker": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3\\View\\TelaAdicionarTreino.cs",
+              "RelativeDocumentMoniker": "Projeto.Academia.A3\\View\\TelaAdicionarTreino.cs",
+              "ToolTip": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3\\View\\TelaAdicionarTreino.cs",
+              "RelativeToolTip": "Projeto.Academia.A3\\View\\TelaAdicionarTreino.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAEwCEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T14:54:05.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MenuLayout.cs",
+              "DocumentMoniker": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3\\View\\MenuLayout.cs",
+              "RelativeDocumentMoniker": "Projeto.Academia.A3\\View\\MenuLayout.cs",
+              "ToolTip": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3\\View\\MenuLayout.cs",
+              "RelativeToolTip": "Projeto.Academia.A3\\View\\MenuLayout.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAewIQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T14:51:51.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MenuLayout.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3\\View\\MenuLayout.cs",
+              "RelativeDocumentMoniker": "Projeto.Academia.A3\\View\\MenuLayout.cs",
+              "ToolTip": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3\\View\\MenuLayout.cs [Design]",
+              "RelativeToolTip": "Projeto.Academia.A3\\View\\MenuLayout.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T14:51:44.529Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "FakeFuncionario.cs",
               "DocumentMoniker": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3.Tests\\FakeFuncionario.cs",
               "RelativeDocumentMoniker": "Projeto.Academia.A3.Tests\\FakeFuncionario.cs",
               "ToolTip": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3.Tests\\FakeFuncionario.cs",
               "RelativeToolTip": "Projeto.Academia.A3.Tests\\FakeFuncionario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAkwA0AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T20:57:08.12Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FakePagamento.cs",
-              "DocumentMoniker": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3.Tests\\FakePagamento.cs",
-              "RelativeDocumentMoniker": "Projeto.Academia.A3.Tests\\FakePagamento.cs",
-              "ToolTip": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3.Tests\\FakePagamento.cs",
-              "RelativeToolTip": "Projeto.Academia.A3.Tests\\FakePagamento.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGIAAABQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T20:56:32.583Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "PagamentoService.cs",
-              "DocumentMoniker": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3\\Services\\PagamentoService.cs",
-              "RelativeDocumentMoniker": "Projeto.Academia.A3\\Services\\PagamentoService.cs",
-              "ToolTip": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3\\Services\\PagamentoService.cs",
-              "RelativeToolTip": "Projeto.Academia.A3\\Services\\PagamentoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIoAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T20:53:52.454Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "MembroService.cs",
-              "DocumentMoniker": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3\\Services\\MembroService.cs",
-              "RelativeDocumentMoniker": "Projeto.Academia.A3\\Services\\MembroService.cs",
-              "ToolTip": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3\\Services\\MembroService.cs",
-              "RelativeToolTip": "Projeto.Academia.A3\\Services\\MembroService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkBAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T20:53:10.739Z",
+              "WhenOpened": "2025-05-21T14:19:39.419Z",
               "EditorCaption": ""
             }
           ]

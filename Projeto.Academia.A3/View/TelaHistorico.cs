@@ -101,7 +101,7 @@ namespace Projeto.Academia.A3.View
             {
                 foreach (var exercicio in subTreino.Exercicios)
                 {
-                    string item = $"{exercicio.NomeExercicio} - {exercicio.Serie}x{exercicio.Repeticoes}";
+                    string item = $"{exercicio.NomeExercicio} - {exercicio.Serie}x{exercicio.Repeticoes}"; // formatação da escrita
 
                     if (subTreino.Nome.StartsWith("A", StringComparison.OrdinalIgnoreCase))
                     {

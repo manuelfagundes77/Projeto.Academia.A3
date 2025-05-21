@@ -57,7 +57,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -252,7 +252,7 @@
             this.btnAddExercicio.BackgroundImage = global::Projeto.Academia.A3.Properties.Resources.iconadd;
             this.btnAddExercicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAddExercicio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddExercicio.Location = new System.Drawing.Point(703, 197);
+            this.btnAddExercicio.Location = new System.Drawing.Point(703, 201);
             this.btnAddExercicio.Name = "btnAddExercicio";
             this.btnAddExercicio.Size = new System.Drawing.Size(28, 23);
             this.btnAddExercicio.TabIndex = 17;
@@ -312,7 +312,7 @@
             "Tipo A",
             "Tipo B",
             "Tipo C"});
-            this.selecionaSubtreino.Location = new System.Drawing.Point(598, 199);
+            this.selecionaSubtreino.Location = new System.Drawing.Point(548, 199);
             this.selecionaSubtreino.Name = "selecionaSubtreino";
             this.selecionaSubtreino.Size = new System.Drawing.Size(92, 21);
             this.selecionaSubtreino.TabIndex = 23;
@@ -365,21 +365,21 @@
             this.label13.TabIndex = 28;
             this.label13.Text = "Treino C";
             // 
-            // label14
+            // label15
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(587, 69);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(41, 13);
-            this.label14.TabIndex = 29;
-            this.label14.Text = "label14";
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(511, 204);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(31, 13);
+            this.label15.TabIndex = 30;
+            this.label15.Text = "Tipo ";
             // 
             // TelaTreino
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -448,6 +448,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
     }
 }

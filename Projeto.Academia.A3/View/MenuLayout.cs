@@ -96,7 +96,7 @@ namespace Projeto.Academia.A3.View
 
         private void panelLuzVerde_Paint(object sender, PaintEventArgs e)
         {
-
+            
         }
 
         private void panelPrincipal_Paint(object sender, PaintEventArgs e)
@@ -117,6 +117,19 @@ namespace Projeto.Academia.A3.View
         private void labelLogado_Click(object sender, EventArgs e)
         {
 
+        }
+
+        //deslogar
+        private void panelLuzVerde_Click(object sender, EventArgs e)
+        {
+            var resultado = MessageBox.Show("Deseja realmente sair?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (resultado == DialogResult.Yes)
+            {
+                this.Hide();
+                var telaLogin = new TelaLogin();
+                telaLogin.Show();
+            }
         }
     }
 }

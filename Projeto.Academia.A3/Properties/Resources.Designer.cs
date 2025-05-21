@@ -103,6 +103,26 @@ namespace Projeto.Academia.A3.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ChatGPT_Image_20_de_mai__de_2025_10_16_37 {
+            get {
+                object obj = ResourceManager.GetObject("ChatGPT_Image_20_de_mai._de_2025_10_16_37", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ChatGPT_Image_20_de_mai1 {
+            get {
+                object obj = ResourceManager.GetObject("ChatGPT_Image_20_de_mai1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap historico24x24 {
             get {
                 object obj = ResourceManager.GetObject("historico24x24", resourceCulture);
