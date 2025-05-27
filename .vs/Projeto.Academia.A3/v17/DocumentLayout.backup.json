@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0DDBC106-F9D1-466A-AF78-1358CB16593D}|Projeto.Academia.A3\\Projeto.Academia.A3.csproj|c:\\users\\manuel\\desktop\\projeto.academia.a3\\projeto.academia.a3\\view\\menulayout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DDBC106-F9D1-466A-AF78-1358CB16593D}|Projeto.Academia.A3\\Projeto.Academia.A3.csproj|solutionrelative:projeto.academia.a3\\view\\menulayout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0DDBC106-F9D1-466A-AF78-1358CB16593D}|Projeto.Academia.A3\\Projeto.Academia.A3.csproj|c:\\users\\manuel\\desktop\\projeto.academia.a3\\projeto.academia.a3\\view\\telahistorico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DDBC106-F9D1-466A-AF78-1358CB16593D}|Projeto.Academia.A3\\Projeto.Academia.A3.csproj|solutionrelative:projeto.academia.a3\\view\\telahistorico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DDBC106-F9D1-466A-AF78-1358CB16593D}|Projeto.Academia.A3\\Projeto.Academia.A3.csproj|c:\\users\\manuel\\desktop\\projeto.academia.a3\\projeto.academia.a3\\view\\menulayout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0DDBC106-F9D1-466A-AF78-1358CB16593D}|Projeto.Academia.A3\\Projeto.Academia.A3.csproj|solutionrelative:projeto.academia.a3\\view\\menulayout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{0DDBC106-F9D1-466A-AF78-1358CB16593D}|Projeto.Academia.A3\\Projeto.Academia.A3.csproj|c:\\users\\manuel\\desktop\\projeto.academia.a3\\projeto.academia.a3\\view\\telahistorico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0DDBC106-F9D1-466A-AF78-1358CB16593D}|Projeto.Academia.A3\\Projeto.Academia.A3.csproj|solutionrelative:projeto.academia.a3\\view\\telahistorico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DDBC106-F9D1-466A-AF78-1358CB16593D}|Projeto.Academia.A3\\Projeto.Academia.A3.csproj|c:\\users\\manuel\\desktop\\projeto.academia.a3\\projeto.academia.a3\\view\\telaadicionartreino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DDBC106-F9D1-466A-AF78-1358CB16593D}|Projeto.Academia.A3\\Projeto.Academia.A3.csproj|solutionrelative:projeto.academia.a3\\view\\telaadicionartreino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0DDBC106-F9D1-466A-AF78-1358CB16593D}|Projeto.Academia.A3\\Projeto.Academia.A3.csproj|c:\\users\\manuel\\desktop\\projeto.academia.a3\\projeto.academia.a3\\services\\treinoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DDBC106-F9D1-466A-AF78-1358CB16593D}|Projeto.Academia.A3\\Projeto.Academia.A3.csproj|solutionrelative:projeto.academia.a3\\services\\treinoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DDBC106-F9D1-466A-AF78-1358CB16593D}|Projeto.Academia.A3\\Projeto.Academia.A3.csproj|c:\\users\\manuel\\desktop\\projeto.academia.a3\\projeto.academia.a3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DDBC106-F9D1-466A-AF78-1358CB16593D}|Projeto.Academia.A3\\Projeto.Academia.A3.csproj|solutionrelative:projeto.academia.a3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{82763687-4436-41B2-8406-3A4EB74BDFF3}|Projeto.Academia.A3.Tests\\Projeto.Academia.A3.Tests.csproj|c:\\users\\manuel\\desktop\\projeto.academia.a3\\projeto.academia.a3.tests\\fakefuncionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{82763687-4436-41B2-8406-3A4EB74BDFF3}|Projeto.Academia.A3.Tests\\Projeto.Academia.A3.Tests.csproj|solutionrelative:projeto.academia.a3.tests\\fakefuncionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0DDBC106-F9D1-466A-AF78-1358CB16593D}|Projeto.Academia.A3\\Projeto.Academia.A3.csproj|c:\\users\\manuel\\desktop\\projeto.academia.a3\\projeto.academia.a3\\controller\\treinocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DDBC106-F9D1-466A-AF78-1358CB16593D}|Projeto.Academia.A3\\Projeto.Academia.A3.csproj|solutionrelative:projeto.academia.a3\\controller\\treinocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,66 +38,53 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3\\Program.cs",
-              "RelativeDocumentMoniker": "Projeto.Academia.A3\\Program.cs",
-              "ToolTip": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3\\Program.cs",
-              "RelativeToolTip": "Projeto.Academia.A3\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T14:54:49.957Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TelaAdicionarTreino.cs",
-              "DocumentMoniker": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3\\View\\TelaAdicionarTreino.cs",
-              "RelativeDocumentMoniker": "Projeto.Academia.A3\\View\\TelaAdicionarTreino.cs",
-              "ToolTip": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3\\View\\TelaAdicionarTreino.cs",
-              "RelativeToolTip": "Projeto.Academia.A3\\View\\TelaAdicionarTreino.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAEwCEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T14:54:05.528Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MenuLayout.cs",
-              "DocumentMoniker": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3\\View\\MenuLayout.cs",
-              "RelativeDocumentMoniker": "Projeto.Academia.A3\\View\\MenuLayout.cs",
-              "ToolTip": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3\\View\\MenuLayout.cs*",
-              "RelativeToolTip": "Projeto.Academia.A3\\View\\MenuLayout.cs*",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAewIIAAAAhAAAAAAAAAA==",
+              "Title": "TelaHistorico.cs",
+              "DocumentMoniker": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3\\View\\TelaHistorico.cs",
+              "RelativeDocumentMoniker": "Projeto.Academia.A3\\View\\TelaHistorico.cs",
+              "ToolTip": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3\\View\\TelaHistorico.cs",
+              "RelativeToolTip": "Projeto.Academia.A3\\View\\TelaHistorico.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAwDkAAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T14:51:51.155Z",
+              "WhenOpened": "2025-05-26T23:15:03.802Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MenuLayout.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3\\View\\MenuLayout.cs",
-              "RelativeDocumentMoniker": "Projeto.Academia.A3\\View\\MenuLayout.cs",
-              "ToolTip": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3\\View\\MenuLayout.cs [Design]*",
-              "RelativeToolTip": "Projeto.Academia.A3\\View\\MenuLayout.cs [Design]*",
+              "Title": "TelaHistorico.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3\\View\\TelaHistorico.cs",
+              "RelativeDocumentMoniker": "Projeto.Academia.A3\\View\\TelaHistorico.cs",
+              "ToolTip": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3\\View\\TelaHistorico.cs [Design]",
+              "RelativeToolTip": "Projeto.Academia.A3\\View\\TelaHistorico.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T14:51:44.529Z",
+              "WhenOpened": "2025-05-26T23:15:02.377Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FakeFuncionario.cs",
-              "DocumentMoniker": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3.Tests\\FakeFuncionario.cs",
-              "RelativeDocumentMoniker": "Projeto.Academia.A3.Tests\\FakeFuncionario.cs",
-              "ToolTip": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3.Tests\\FakeFuncionario.cs",
-              "RelativeToolTip": "Projeto.Academia.A3.Tests\\FakeFuncionario.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAkwA0AAAA0AAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "TreinoController.cs",
+              "DocumentMoniker": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3\\Controller\\TreinoController.cs",
+              "RelativeDocumentMoniker": "Projeto.Academia.A3\\Controller\\TreinoController.cs",
+              "ToolTip": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3\\Controller\\TreinoController.cs",
+              "RelativeToolTip": "Projeto.Academia.A3\\Controller\\TreinoController.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAADwv04AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T14:19:39.419Z",
+              "WhenOpened": "2025-05-26T23:13:02.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TreinoService.cs",
+              "DocumentMoniker": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3\\Services\\TreinoService.cs",
+              "RelativeDocumentMoniker": "Projeto.Academia.A3\\Services\\TreinoService.cs",
+              "ToolTip": "C:\\Users\\Manuel\\Desktop\\Projeto.Academia.A3\\Projeto.Academia.A3\\Services\\TreinoService.cs",
+              "RelativeToolTip": "Projeto.Academia.A3\\Services\\TreinoService.cs",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAUwMsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T22:57:51.419Z",
               "EditorCaption": ""
             }
           ]

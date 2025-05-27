@@ -60,8 +60,8 @@ namespace Projeto.Academia.A3.Services
                     int alunoId = Convert.ToInt32(idComando.ExecuteScalar()); // Recupera o ID gerado automaticamente
 
                     // Agora podemos chamar o serviço de pagamentos com o AlunoId
-                  //  var pagamentoService = new PagamentoService(); // LIGAR DEPOIISSS
-                 //   pagamentoService.GerarPagamentosPendentes(alunoId); //LIGAR DEPOISS
+                    var pagamentoService = new PagamentoService(); // LIGAR DEPOIISSS
+                    pagamentoService.GerarPagamentosPendentes(alunoId); //LIGAR DEPOISS
 
                     return true; // Se o comando foi bem-sucedido, retorna true
                 }

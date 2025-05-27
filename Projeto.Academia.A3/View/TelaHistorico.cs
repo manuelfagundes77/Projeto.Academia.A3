@@ -38,16 +38,24 @@ namespace Projeto.Academia.A3.View
 
         private void formatarTabela()
         {
+
+           
             // Esconde as colunas desnecessarias (caso tenha colunas extras)
             dataView.Columns["AlunoId"].Visible = false; // Esconde a coluna AlunoId
-            dataView.Columns["TreinoId"].Visible = false; 
-            dataView.Columns["Tipo"].DisplayIndex = 0; // Tipo na primeira posicao
-            dataView.Columns["Descricao"].DisplayIndex = 1; 
-            dataView.Columns["Duracao"].DisplayIndex = 3; 
-            dataView.Columns["DataInicio"].DisplayIndex = 2;
+            dataView.Columns["TreinoId"].Visible = false;
+            dataView.Columns["FuncionarioId"].Visible = false;
+            //dataView.Columns["Tipo"].DisplayIndex = 0; // Tipo na primeira posicao
+            //dataView.Columns["Descricao"].DisplayIndex = 1; 
+           //ataView.Columns["Duracao"].DisplayIndex = 3; 
+            //dataView.Columns["DataInicio"].DisplayIndex = 2;
+
+          
 
             // Muda o texto do cabeçalho
             dataView.Columns["Duracao"].HeaderText = "Duração Até";
+
+            dataView.Columns["Excluir"].DisplayIndex = dataView.Columns.Count - 1;// 7
+            dataView.Columns["Duracao"].DisplayIndex = dataView.Columns.Count - 3; // 6
 
             // Formatar a coluna DataInicio
             foreach (DataGridViewRow row in dataView.Rows)
@@ -65,6 +73,19 @@ namespace Projeto.Academia.A3.View
             var treinos = _treinoController.ObterTreinos(_membro.AlunoId);
 
             dataView.DataSource = treinos;
+
+            if (!dataView.Columns.Contains("Excluir"))
+            {
+                DataGridViewButtonColumn btnExcluir = new DataGridViewButtonColumn();
+                btnExcluir.Name = "Excluir";
+                btnExcluir.HeaderText = "Excluir";
+                btnExcluir.Text = "Excluir";
+                btnExcluir.UseColumnTextForButtonValue = true;
+
+                dataView.Columns.Add(btnExcluir);
+            }
+
+
         }
 
       
@@ -86,7 +107,25 @@ namespace Projeto.Academia.A3.View
 
         private void dataView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex >= 0 && dataView.Columns[e.ColumnIndex].Name == "Excluir")
+            {
+                int treinoId = Convert.ToInt32(dataView.Rows[e.RowIndex].Cells["TreinoId"].Value);
 
+                // Perguntar confirmação antes de excluir
+                var resultado = MessageBox.Show("Tem certeza que deseja excluir este treino?",
+                                                "Confirmação",
+                                                MessageBoxButtons.YesNo,
+                                                MessageBoxIcon.Question);
+
+                if (resultado == DialogResult.Yes)
+                {
+                    bool excluido = _treinoController.ExcluirTreinoPorId(treinoId);
+                    if (excluido)
+                    {
+                        carregarTreinos(); // Atualiza a tabela após exclusão
+                    }
+                }
+            }
         }
 
         private void CarregarExerciciosNosListBox(int treinoId)

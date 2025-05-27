@@ -15,7 +15,7 @@ namespace Projeto.Academia.A3.Tests
         {
             // Arrange
             string login = "ad";
-            string senha = "123"; // Troque para um login e senha válidos no banco de dados
+            string senha = "123";
             var funcionarioService = new FuncionarioService();
 
             // Act

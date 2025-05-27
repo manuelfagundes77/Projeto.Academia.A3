@@ -170,6 +170,41 @@ namespace Projeto.Academia.A3.Services
             }
         }
 
+        //CRIAR   EXLCUIR POR ID TREINO
+
+        public bool ExcluirTreinoPorId(int treinoId)
+        {
+            MySqlConnection conexao = Conexao.ObterConexao();
+            if (conexao == null)
+            {
+                return false;
+            }
+
+            try
+            {
+                string query = "DELETE FROM treinos WHERE TreinoId = @TreinoId";
+
+                MySqlCommand cmd = new MySqlCommand(query, conexao);
+                cmd.Parameters.AddWithValue("@TreinoId", treinoId);
+
+                int linhasAfetadas = cmd.ExecuteNonQuery();
+
+                return linhasAfetadas > 0; // Retorna true se deletou alguma linha, false se não
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao excluir treino: {ex.Message}");
+                return false;
+            }
+            finally
+            {
+                Conexao.FecharConexao(conexao);
+            }
+        }
+
+
+
+
 
 
 

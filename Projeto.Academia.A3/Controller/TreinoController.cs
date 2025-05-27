@@ -50,5 +50,32 @@ namespace Projeto.Academia.A3.Controller
         {
             return treinoService.ObterTreinosPorFuncionario(funcionarioId);
         }
+
+
+
+        public bool ExcluirTreinoPorId(int treinoId)
+        {
+            try
+            {
+                bool sucesso = treinoService.ExcluirTreinoPorId(treinoId);
+
+                if (sucesso)
+                {
+                    MessageBox.Show("Treino excluído com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Não foi possível excluir o treino. Verifique se o ID está correto.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+
+                return sucesso;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao excluir o treino: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+        }
+
     }
 }
