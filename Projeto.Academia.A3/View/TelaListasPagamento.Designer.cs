@@ -1,6 +1,6 @@
 ﻿namespace Projeto.Academia.A3.View
 {
-    partial class TelaListas
+    partial class TelaListasPagamento
     {
         /// <summary>
         /// Required designer variable.

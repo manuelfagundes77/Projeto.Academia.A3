@@ -10,13 +10,13 @@ namespace Projeto.Academia.A3.Data
         private static string senha = "123456789";
         private static string bancoDeDados = "dbacademia";
 
-        // Método para obter a string de conexão
+        // Metodo para obter a string de conexão
         private static string ObterConexaoString()
         {
             return $"server={servidor};user id={usuario};password={senha};database={bancoDeDados}";
         }
 
-        // Método para abrir a conexão
+        // Metodo para abrir a conexão
         public static MySqlConnection ObterConexao()
         {
             MySqlConnection conexao = new MySqlConnection(ObterConexaoString());
@@ -24,19 +24,19 @@ namespace Projeto.Academia.A3.Data
             try
             {
                 conexao.Open();
-              //  MessageBox.Show("Conexão com o banco de dados realizada com sucesso!");
+              
                 Console.WriteLine("Conexão com o banco de dados realizada com sucesso!");
                 return conexao;
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Erro ao conectar ao banco de dados: " + ex.Message);
-               // MessageBox.Show("Erro ao conectar ao banco de dados: " + ex.Message);
+             
                 return null;
             }
         }
 
-        // Método para fechar a conexão
+        // Metodo para fechar a conexão
         public static void FecharConexao(MySqlConnection conexao)
         {
             if (conexao != null && conexao.State == System.Data.ConnectionState.Open)

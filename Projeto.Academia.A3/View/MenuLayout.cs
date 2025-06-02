@@ -28,7 +28,7 @@ namespace Projeto.Academia.A3.View
             // Verifica se o funcionário esta logado e altera o texto do labelLogado
             if (FuncionarioLogado.Funcionario != null)
             {
-                // Exibe o nome do funcionário logado no label
+                // Exibe o nome do funcionario logado no label
                 labelLogado.Text = "Bem-vindo, " + FuncionarioLogado.Funcionario.Nome;
                 panelLuzVerde.Visible = true;  // Torna o painel visível da luz verde 
             }
@@ -66,7 +66,7 @@ namespace Projeto.Academia.A3.View
 
         private void pagamentos_Click(object sender, EventArgs e)
         {
-            AbrirFormNoPainel(new TelaListas());
+            AbrirFormNoPainel(new TelaListasPagamento());
         }
 
         private void areaBranca_Paint(object sender, PaintEventArgs e)
@@ -86,7 +86,7 @@ namespace Projeto.Academia.A3.View
 
         private void adicionarTreino_Click(object sender, EventArgs e)
         {
-            AbrirFormNoPainel(new TelaAdicionarTreino());
+            AbrirFormNoPainel(new TelaAreaMembro());
         }
 
         private void MenuLayout_FormClosing(object sender, FormClosingEventArgs e)

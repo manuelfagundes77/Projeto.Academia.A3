@@ -13,13 +13,13 @@ using Projeto.Academia.A3.Utils;
 
 namespace Projeto.Academia.A3.View
 {
-    public partial class TelaAdicionarTreino : Form
+    public partial class TelaAreaMembro : Form
     {
         // Instancia o controlador de membros
         private MembroController _membroController;
         private Membro _membroBuscado;
 
-        public TelaAdicionarTreino()
+        public TelaAreaMembro()
         {
             InitializeComponent();
             // Inicializa o MembroController
@@ -27,7 +27,7 @@ namespace Projeto.Academia.A3.View
         }
 
         //Segundo construtor Para passar dados e chamar a tela em outro canto  voltando dados 
-        public TelaAdicionarTreino(Membro membro) : this()
+        public TelaAreaMembro(Membro membro) : this()
         {
             _membroBuscado = membro;
             PreencherCamposComMembro(membro);
@@ -127,7 +127,7 @@ namespace Projeto.Academia.A3.View
                 return;
             }
 
-            // Primeira confirmacao exibe o nome do membro que sera excluído
+            // Primeira confirmacao exibe o nome do membro que sera excluido
             DialogResult result1 = MessageBox.Show($"Tem certeza que deseja excluir o membro {nomeMembro}?",
                                                    "Confirmar Exclusão",
                                                    MessageBoxButtons.YesNo,

@@ -12,14 +12,14 @@ using Projeto.Academia.A3.Models;
 
 namespace Projeto.Academia.A3.View
 {
-    public partial class TelaListas : Form
+    public partial class TelaListasPagamento : Form
     {
         private PagamentoController _pagamentoController;
         private MembroController _membroController;
         private Membro _membroBuscado;
        
 
-        public TelaListas()
+        public TelaListasPagamento()
         {
             InitializeComponent();
             _membroController = new MembroController();
@@ -58,7 +58,7 @@ namespace Projeto.Academia.A3.View
 
             // Faz o grid ocupar todo o espaço horizontal disponível
             dataGrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            // Ajusta colunas (opcional)
+           
             dataGrid.Columns["PagamentoId"].Visible = false;
             dataGrid.Columns["Situacao"].Width = 80;
             dataGrid.Columns["Confirmar"].Width = 140;
@@ -68,13 +68,13 @@ namespace Projeto.Academia.A3.View
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            // Obtém o CPF digitado no campo de busca
+            // Obtem o CPF digitado no campo de busca
             string cpf = campoBusca.Text.Trim();
             //  MessageBox.Show("CPF buscado: " + cpf);
 
             if (!string.IsNullOrEmpty(cpf))
             {
-                // Chama o método no controlador para buscar o membro
+                // Chama o metodo no controlador para buscar o membro
                 Membro membro = _membroController.BuscarMembroPorCPF(cpf);
 
 
@@ -105,13 +105,13 @@ namespace Projeto.Academia.A3.View
         // metodo para poder apertar no botao dentro da tebala confirmar
         private void dataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Verifica se clicou em uma célula válida e se é a coluna do botão "Confirmar"
+            // Verifica se clicou em uma celula valida e se é a coluna do botão "Confirmar"
             if (e.RowIndex >= 0 && dataGrid.Columns[e.ColumnIndex].Name == "Confirmar")
             {
-                // Obtém o PagamentoId da linha clicada
+                // Obtem o PagamentoId da linha clicada
                 int pagamentoId = Convert.ToInt32(dataGrid.Rows[e.RowIndex].Cells["PagamentoId"].Value);
 
-                // Verifica a situação atual antes de confirmar
+                // Verifica a situaçao atual antes de confirmar
                 string situacaoAtual = dataGrid.Rows[e.RowIndex].Cells["Situacao"].Value.ToString();
 
                 if (situacaoAtual == "Pago")

@@ -173,7 +173,7 @@ namespace Projeto.Academia.A3.View
             {
                 menuLayout.GetType()
                           .GetMethod("AbrirFormNoPainel", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)
-                          .Invoke(menuLayout, new object[] { new TelaAdicionarTreino(_membro) });
+                          .Invoke(menuLayout, new object[] { new TelaAreaMembro(_membro) });
             }
             else
             {

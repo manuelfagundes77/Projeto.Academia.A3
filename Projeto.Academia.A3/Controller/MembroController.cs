@@ -47,11 +47,11 @@ namespace Projeto.Academia.A3.Controller
             else
             {
                 MessageBox.Show("Nenhum membro encontrado.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return new List<Membro>(); // Retorna uma lista vazia se não houver membros
+                return new List<Membro>(); // Retorna uma lista vazia se nao houver membros
             }
         }
 
-        //Método para buscar por CPF
+        //Metodo para buscar por CPF
         public Membro BuscarMembroPorCPF(string cpf)
         {
             Membro membro = _membroService.BuscarMembroPorCPF(cpf);
@@ -69,7 +69,7 @@ namespace Projeto.Academia.A3.Controller
 
         public void EditarMembro(Membro membro)
         {
-            // Validações adicionais podem ser feitas aqui se necessário
+            
 
             bool sucesso = _membroService.EditarMembro(membro);
 

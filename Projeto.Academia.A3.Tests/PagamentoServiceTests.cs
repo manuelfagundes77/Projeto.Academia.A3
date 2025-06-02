@@ -45,15 +45,15 @@ namespace Projeto.Academia.A3.Tests
         [Fact]
         public void ListarPagamentosPorAluno_DeveRetornarListaDePagamentos()
         {
-            // Arrange: Define o alunoId que será usado no teste
+            // Arrange: Define o alunoId que sera usado no teste
             int alunoId = 15; 
             var pagamentoService = new PagamentoService();
 
-            // Act: Chama o método que lista os pagamentos
+            // Act: Chama o metodo que lista os pagamentos
             var result = pagamentoService.ListarPagamentosPorAluno(alunoId);
 
-            // Assert: Verifica se a lista de pagamentos não é nula e tem pelo menos 1 pagamento
-            Assert.NotNull(result); // Verifica se a lista não é nula
+            // Assert: Verifica se a lista de pagamentos nao e nula e tem pelo menos 1 pagamento
+            Assert.NotNull(result); // Verifica se a lista não e nula
             Assert.True(result.Count > 0, "Esperado pelo menos um pagamento para o aluno.");
         }
 

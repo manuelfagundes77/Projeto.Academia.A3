@@ -157,11 +157,11 @@
     <Compile Include="View\TelaAdicionarFuncionario.Designer.cs">
       <DependentUpon>TelaAdicionarFuncionario.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\TelaAdicionarTreino.cs">
+    <Compile Include="View\TelaAreaMembro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\TelaAdicionarTreino.Designer.cs">
-      <DependentUpon>TelaAdicionarTreino.cs</DependentUpon>
+    <Compile Include="View\TelaAreaMembro.Designer.cs">
+      <DependentUpon>TelaAreaMembro.cs</DependentUpon>
     </Compile>
     <Compile Include="View\TelaFuncionarioTreinos.cs">
       <SubType>Form</SubType>
@@ -175,11 +175,11 @@
     <Compile Include="View\TelaHistorico.Designer.cs">
       <DependentUpon>TelaHistorico.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\TelaListas.cs">
+    <Compile Include="View\TelaListasPagamento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\TelaListas.Designer.cs">
-      <DependentUpon>TelaListas.cs</DependentUpon>
+    <Compile Include="View\TelaListasPagamento.Designer.cs">
+      <DependentUpon>TelaListasPagamento.cs</DependentUpon>
     </Compile>
     <Compile Include="View\TelaLogin.cs">
       <SubType>Form</SubType>
@@ -221,8 +221,8 @@
     <EmbeddedResource Include="View\TelaAdicionarFuncionario.resx">
       <DependentUpon>TelaAdicionarFuncionario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\TelaAdicionarTreino.resx">
-      <DependentUpon>TelaAdicionarTreino.cs</DependentUpon>
+    <EmbeddedResource Include="View\TelaAreaMembro.resx">
+      <DependentUpon>TelaAreaMembro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\TelaFuncionarioTreinos.resx">
       <DependentUpon>TelaFuncionarioTreinos.cs</DependentUpon>
@@ -230,8 +230,8 @@
     <EmbeddedResource Include="View\TelaHistorico.resx">
       <DependentUpon>TelaHistorico.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\TelaListas.resx">
-      <DependentUpon>TelaListas.cs</DependentUpon>
+    <EmbeddedResource Include="View\TelaListasPagamento.resx">
+      <DependentUpon>TelaListasPagamento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\TelaLogin.resx">
       <DependentUpon>TelaLogin.cs</DependentUpon>

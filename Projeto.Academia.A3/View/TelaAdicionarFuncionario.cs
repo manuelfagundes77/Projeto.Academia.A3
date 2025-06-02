@@ -25,6 +25,7 @@ namespace Projeto.Academia.A3.View
 
         }
 
+        //Botao de confirmação "adiconar"
         private void button1_Click(object sender, EventArgs e)
         {
             //recupera os dados do campos digitados
@@ -63,7 +64,7 @@ namespace Projeto.Academia.A3.View
             }
 
         }
-
+       
         private void BtnVoltar_Click(object sender, EventArgs e)
         {
             Menu menu = new Menu();

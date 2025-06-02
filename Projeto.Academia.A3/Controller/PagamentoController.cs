@@ -18,7 +18,7 @@ namespace Projeto.Academia.A3.Controller
             _pagamentoService = new PagamentoService(); // Instancia a classe de serviços
         }
 
-        // Método para alterar a situação do pagamento para "Pago" usando o PagamentoId
+        // Metodo para alterar a situaçao do pagamento para "Pago" usando o PagamentoId
         public void AlterarSituacaoPagamento(int pagamentoId)
         {
             bool sucesso = _pagamentoService.AlterarSituacaoPagamentoPorId(pagamentoId); // Alterar para 'Pago' no serviço
@@ -45,7 +45,7 @@ namespace Projeto.Academia.A3.Controller
             else
             {
                 MessageBox.Show("Nenhum pagamento encontrado.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return new List<Pagamento>(); // Retorna uma lista vazia se não houver pagamentos
+                return new List<Pagamento>(); // Retorna uma lista vazia se nao houver pagamentos
             }
         }
 

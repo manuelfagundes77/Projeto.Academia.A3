@@ -11,7 +11,7 @@ namespace Projeto.Academia.A3.Services
 {
     public class FuncionarioService
     {
-        // Método para validar o login do funcionário
+        // Metodo para validar o login do funcionario
         public bool ValidarLogin(string login, string senha)
         {
             string query = "SELECT * FROM funcionario WHERE Login = @login AND Senha = @senha";
@@ -25,7 +25,7 @@ namespace Projeto.Academia.A3.Services
                     cmd.Parameters.AddWithValue("@senha", senha);
 
                     MySqlDataReader reader = cmd.ExecuteReader();
-                    return reader.HasRows; // Retorna true se encontrar algum funcionário com o login e senha fornecidos
+                    return reader.HasRows; // Retorna true se encontrar algum funcionario com o login e senha fornecidos
                 }
                 catch (Exception ex)
                 {
@@ -34,7 +34,7 @@ namespace Projeto.Academia.A3.Services
             }
         }
 
-        // Método para adicionar um novo funcionário
+        // Metodo para adicionar um novo funcionario
         public bool AdicionarFuncionario(Funcionario funcionario)
         {
             string query = "INSERT INTO funcionario (Nome, Cargo, Login, Senha) VALUES (@Nome, @Cargo, @Login, @Senha)";
@@ -49,9 +49,9 @@ namespace Projeto.Academia.A3.Services
                     cmd.Parameters.AddWithValue("@Login", funcionario.Login);
                     cmd.Parameters.AddWithValue("@Senha", funcionario.Senha);
 
-                    int resultado = cmd.ExecuteNonQuery(); // Retorna o número de linhas afetadas
+                    int resultado = cmd.ExecuteNonQuery(); // Retorna o numero de linhas afetadas
 
-                    return resultado > 0; // Retorna true se pelo menos uma linha for afetada (inserção bem-sucedida)
+                    return resultado > 0; // Retorna true se pelo menos uma linha for afetada (inserção bem sucedida)
                 }
                 catch (Exception ex)
                 {
@@ -97,6 +97,7 @@ namespace Projeto.Academia.A3.Services
             }
         }
 
+        //retorna lista todos os funcionarios
         public List<Funcionario> ObterTodosFuncionarios()
         {
             MySqlConnection conexao = Conexao.ObterConexao();

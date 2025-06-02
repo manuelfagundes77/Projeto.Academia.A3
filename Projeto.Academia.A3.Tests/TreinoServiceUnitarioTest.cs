@@ -13,7 +13,7 @@ namespace Projeto.Academia.A3.Tests
 
         public TreinoServiceUnitarioTests()
         {
-            _fakeService = new FakeTreinoService();
+            _fakeService = new FakeTreinoService();//criação do fake para usar como moq
         }
 
         [Fact]
@@ -97,7 +97,7 @@ namespace Projeto.Academia.A3.Tests
             Assert.Null(treinoDepoisRemover);
         }
 
-        [Fact]
+        [Fact] 
         public void RemoverTreino_TreinoNaoExistente_RetornaFalse()
         {
             // Arrange

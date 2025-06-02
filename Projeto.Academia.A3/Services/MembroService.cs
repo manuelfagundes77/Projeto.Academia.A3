@@ -29,7 +29,7 @@ namespace Projeto.Academia.A3.Services
 
 
         //  adicionar um novo Membro SALVA
-        public bool AdicionarMembro(Membro membro)
+        public bool AdicionarMembro(Membro membro) //volta um booleanoo
         {
             // Criar a conexão com o banco de dados
             MySqlConnection conexao = Conexao.ObterConexao();
@@ -87,7 +87,7 @@ namespace Projeto.Academia.A3.Services
 
 
         //  listar todos os membros
-        public List<Membro> ListarMembros()
+        public List<Membro> ListarMembros()  
         {
             List<Membro> membros = new List<Membro>();
             MySqlConnection conexao = Conexao.ObterConexao();
@@ -175,7 +175,7 @@ namespace Projeto.Academia.A3.Services
             return membro;
         }
 
-        public bool EditarMembro(Membro membro)
+        public bool EditarMembro(Membro membro)  //busca por ID do membro //volta um booleanoo
         {
             MySqlConnection conexao = Conexao.ObterConexao();
 
@@ -243,7 +243,7 @@ namespace Projeto.Academia.A3.Services
             }
         }
 
-        public bool ExcluirMembro(int alunoId)
+        public bool ExcluirMembro(int alunoId)  //exclui o membro pelo ID
         {
             MySqlConnection conexao = Conexao.ObterConexao();
 

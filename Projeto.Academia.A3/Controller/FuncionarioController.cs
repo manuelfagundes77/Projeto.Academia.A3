@@ -17,7 +17,7 @@ namespace Projeto.Academia.A3.Controller
             _funcionarioService = new FuncionarioService();
         }
 
-        // Método para validar login
+        // Metodo para validar login
         public bool ValidarLogin(string login, string senha)
         {
             try
@@ -30,7 +30,7 @@ namespace Projeto.Academia.A3.Controller
             }
         }
 
-        // Método para adicionar um funcionário
+        // Metodo para adicionar um funcionario
         public bool AdicionarFuncionario(string nome, string cargo, string login, string senha)
         {
             Funcionario funcionario = new Funcionario
@@ -51,7 +51,7 @@ namespace Projeto.Academia.A3.Controller
             }
         }
 
-        // Método para buscar o funcionário pelo login e senha
+        // Metodo para buscar o funcionario pelo login e senha
         public Funcionario BuscarFuncionarioPorLogin(string login, string senha)
         {
             try

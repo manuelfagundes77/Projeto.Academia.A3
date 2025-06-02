@@ -1,6 +1,6 @@
 ﻿namespace Projeto.Academia.A3.View
 {
-    partial class TelaAdicionarTreino
+    partial class TelaAreaMembro
     {
         /// <summary>
         /// Required designer variable.

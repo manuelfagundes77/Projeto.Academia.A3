@@ -170,7 +170,7 @@ namespace Projeto.Academia.A3.Services
             }
         }
 
-        //CRIAR   EXLCUIR POR ID TREINO
+        //  EXLCUIR POR ID TREINO
 
         public bool ExcluirTreinoPorId(int treinoId)
         {

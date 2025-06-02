@@ -73,22 +73,21 @@ namespace Projeto.Academia.A3.Services
 
                 if (resultado > 0)
                 {
-                    return true; // Se o comando foi bem-sucedido, retorna true
+                    return true; // Se o comando foi bem sucedido, retorna true
                 }
                 else
                 {
-                    return false; // Se não houve alteração, retorna false
+                    return false; // Se nao houve alteraçao, retorna false
                 }
             }
             catch (Exception ex)
             {
-                // Em caso de erro, exibe a mensagem de erro
-               // MessageBox.Show("Erro ao alterar a situação do pagamento: " + ex.Message);
+                
                 return false;
             }
             finally
             {
-                // Fecha a conexão após a operação
+                // Fecha a conexão após a operacao
                 Conexao.FecharConexao(conexao);
             }
         }
