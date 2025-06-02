@@ -7,11 +7,13 @@ Este projeto foi desenvolvido como parte das atividades avaliativas A3 das disci
 
  ## 👥 Integrantes
 
-> _Adicione aqui o nome dos integrantes do grupo:_
 
-- Nome 1 – RA: XXXXXXX
-- Nome 2 – RA: XXXXXXX
-- Nome 3 – RA: XXXXXXX
+
+- Manuel Geraldo Fagundes De Oliveira Bezerra – RA: 12823125837
+- Erick Martins da Mata – RA: 1282314715
+- Everton Enes Bezerra – RA: 12823132554
+- Everton Enes Bezerra – RA: 12823132554
+- Everton Enes Bezerra – RA: 12823132554
 - ...
 
 
