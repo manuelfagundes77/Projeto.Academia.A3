@@ -12,9 +12,10 @@ Este projeto foi desenvolvido como parte das atividades avaliativas A3 das disci
 - Manuel Geraldo Fagundes De Oliveira Bezerra – RA: 12823125837
 - Erick Martins da Mata – RA: 1282314715
 - Everton Enes Bezerra – RA: 12823132554
-- Everton Enes Bezerra – RA: 12823132554
-- Everton Enes Bezerra – RA: 12823132554
-- ...
+- João Manoel Gomes Barbosa, RA: 12823135018
+- Otávio Ferreira de Paiva Neto, RA: 12823114276
+
+
 
 
 O objetivo é aplicar práticas de modelagem, desenvolvimento e controle de qualidade em um sistema real de gestão para uma academia, utilizando ferramentas modernas e princípios de engenharia de software.

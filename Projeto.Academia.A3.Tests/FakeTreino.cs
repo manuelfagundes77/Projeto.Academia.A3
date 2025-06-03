@@ -114,7 +114,7 @@ namespace Projeto.Academia.A3.Tests
 
         public void AdicionarTreino(Treino treino)
         {
-            // Pode adicionar alguma lógica fake para adicionar treino
+            
             _treinos.Add(treino);
         }
 
