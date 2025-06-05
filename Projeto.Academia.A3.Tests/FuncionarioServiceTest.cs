@@ -37,7 +37,7 @@ namespace Projeto.Academia.A3.Tests
             bool resultado = funcionarioService.ValidarLogin(login, senha);
 
             // Assert
-            Assert.False(resultado); // Espera-se que o login seja inválido
+            Assert.False(resultado); // Espera que o login seja invalido
         }
 
         [Fact]
@@ -59,7 +59,7 @@ namespace Projeto.Academia.A3.Tests
             bool resultado = funcionarioService.AdicionarFuncionario(funcionario);
 
             // Assert
-            Assert.True(resultado); // Espera-se que o funcionário seja adicionado com sucesso
+            Assert.True(resultado); // Espera-se que o funcionario seja adicionado com sucesso
         }
 
         [Fact]
@@ -67,14 +67,14 @@ namespace Projeto.Academia.A3.Tests
         {
             // Arrange
             string login = "ad";
-            string senha = "123"; // Substitua com um login válido
+            string senha = "123"; // Substitua com um login valido
             var funcionarioService = new FuncionarioService();
 
             // Act
             Funcionario funcionario = funcionarioService.BuscarFuncionarioPorLogin(login, senha);
 
             // Assert
-            Assert.NotNull(funcionario); // Espera-se que o funcionário seja encontrado
+            Assert.NotNull(funcionario); // Espera que o funcionario seja encontrado
             Assert.Equal(login, funcionario.Login); // Verifica se o login corresponde
         }
 
@@ -90,8 +90,8 @@ namespace Projeto.Academia.A3.Tests
             List<Funcionario> funcionarios = funcionarioService.ObterTodosFuncionarios();
 
             // Assert
-            Assert.NotNull(funcionarios); // Espera-se que a lista de funcionários não seja nula
-            Assert.NotEmpty(funcionarios); // Espera-se que a lista de funcionários contenha itens
+            Assert.NotNull(funcionarios); // Espera que a lista de funcionarios não seja nula
+            Assert.NotEmpty(funcionarios); // Espera que a lista de funcionarios contenha itens
         }
     }
 }
